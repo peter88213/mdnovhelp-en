@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nv_aeon2 &mdash; mdnovel User guide 4.5.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="../_static/nLogo32.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=772b3574"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="nv_clipboard" href="../nv_clipboard/index.html" />
+    <link rel="prev" title="Plugins" href="../plugins.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            mdnovel User guide
+          </a>
+              <div class="version">
+                Version 0.5+
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preparations.html">Preparations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop.html">Desktop overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_concepts.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plotting.html">Plotting with mdnovel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../command_reference.html">Command reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../properties.html">Properties reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../plugins.html">Plugins</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">nv_aeon2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing-the-plugin">Installing the plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-the-aeon-timeline-2-custom-template">Installing the Aeon Timeline 2 custom template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#command-reference">Command reference</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tools-aeon-timeline-2-information">Tools &gt; Aeon Timeline 2 &gt; Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tools-aeon-timeline-2-update-the-timeline">Tools &gt; Aeon Timeline 2 &gt; Update the timeline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tools-aeon-timeline-2-update-the-project">Tools &gt; Aeon Timeline 2 &gt; Update the project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tools-aeon-timeline-2-add-or-update-moon-phase-data">Tools &gt; Aeon Timeline 2 &gt; Add or update moon phase data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tools-aeon-timeline-2-open-aeon-timeline-2">Tools &gt; Aeon Timeline 2 &gt; Open Aeon Timeline 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#file-new-create-from-aeon-timeline-2">File &gt; New &gt; Create from Aeon Timeline 2…</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#control-conversion">Control conversion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prepare-your-timeline-for-export">Prepare your timeline for export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#synchronization-in-detail">Synchronization in detail</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#known-limitations">Known limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conversion-rules-for-newly-created-mdnovel-projects">Conversion rules for newly created mdnovel projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#update-rules-for-existing-mdnovel-projects">Update rules for existing mdnovel projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#update-rules-for-aeon-timeline-2-projects">Update rules for Aeon Timeline 2 projects</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-configuration">Custom configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#global-configuration">Global configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#local-project-configuration">Local project configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-provide-modify-a-configuration-file">How to provide/modify a configuration file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../nv_clipboard/index.html">nv_clipboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nv_collection/index.html">nv_collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nv_editor/index.html">nv_editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nv_matrix/index.html">nv_matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nv_templates/index.html">nv_templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nv_timeline/index.html">nv_timeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nv_tlview/index.html">nv_tlview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nv_updater/index.html">nv_updater</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About this user guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">mdnovel User guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../plugins.html">Plugins</a></li>
+      <li class="breadcrumb-item active">nv_aeon2</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p><img alt="external-link" src="../_images/external-link.png" /> <a class="reference external" href="https://peter88213.github.io/mdnovhelp-de/nv_aeon2/">German</a></p>
+<hr class="docutils" />
+<section id="nv-aeon2">
+<h1>nv_aeon2<a class="headerlink" href="#nv-aeon2" title="Link to this heading"></a></h1>
+<p><strong>User guide</strong></p>
+<p>This page refers to the latest <a class="reference external" href="https://github.com/peter88213/nv_aeon2/">nv_aeon2</a> release.
+You can open it with <strong>Help &gt; Aeon 2 plugin Online help</strong>.</p>
+<p>The plugin adds a <strong>Timeline</strong> entry to the <em>mdnovel</em> <strong>Tools</strong> menu,
+a <strong>Create from Aeon Timeline 2…</strong> to the <strong>File &gt; New</strong> submenu,
+and an <strong>Aeon 2 plugin Online Help</strong> entry to the <strong>Help</strong> menu.
+The Toolbar gets a <img alt="Timeline" src="../_images/aeon2.png" /> button.</p>
+<figure class="align-default">
+<img alt="mdnovel Screenshot" src="../_images/screen01.png" />
+</figure>
+<figure class="align-default">
+<img alt="mdnovel Screenshot" src="../_images/screen02.png" />
+</figure>
+<section id="installing-the-plugin">
+<h2>Installing the plugin<a class="headerlink" href="#installing-the-plugin" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Either launch the downloaded <strong>nv_aeon2_vx.x.x.pyzw</strong>
+file by double-clicking (Windows/Linux desktop),</p></li>
+<li><p>or execute <code class="docutils literal notranslate"><span class="pre">`python</span> <span class="pre">nv_aeon2_vx.x.x.pyzw`</span></code> (Windows),
+resp. <code class="docutils literal notranslate"><span class="pre">`python3</span> <span class="pre">nv_aeon2_vx.x.x.pyzw`</span></code> (Linux)
+on the command line.</p></li>
+</ul>
+<p><em>“x.x.x”</em> means the version number.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Many web browsers recognize the download as an executable file
+and offer to open it immedately.
+This starts the installation.</p>
+<p>However, depending on your security settings, your browser may
+initially  refuse  to download the executable file.
+In this case, your confirmation or an additional action is required.
+If this is not possible, you have the option of downloading
+the zip file.</p>
+</div>
+</section>
+<section id="installing-the-aeon-timeline-2-custom-template">
+<h2>Installing the Aeon Timeline 2 custom template<a class="headerlink" href="#installing-the-aeon-timeline-2-custom-template" title="Link to this heading"></a></h2>
+<p>After installation, you can copy a “mdnovel.xml” template to the
+<em>Aeon Timeline 2</em> custom template folder. The easiest way is to create new
+timelines based on this template. It provides the entities and event
+properties that are converted to <em>mdnovel</em> by default.</p>
+<p>You find the customized template in the <em>mdnovel</em> installation directory under</p>
+<p><code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.novx\nv_aeon2_sample\</span></code></p>
+<p>Just copy it into</p>
+<p><code class="docutils literal notranslate"><span class="pre">AppData\Local\Scribble</span> <span class="pre">Code\Aeon</span> <span class="pre">Timeline</span> <span class="pre">2\CustomTemplates</span></code>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">&lt;your</span> <span class="pre">user</span> <span class="pre">name&gt;\AppData</span></code> folder is hidden, so you
+might have to go to the <em>Explorer</em> settings first to
+enable <em>Show hidden files</em>. Just disable this again after
+successfully having installed the custom template.</p>
+</div>
+<p>The next time you start <em>Aeon Timeline 2</em>,
+the new template appears in the <em>Custom Templates</em> area.</p>
+</section>
+<section id="command-reference">
+<h2>Command reference<a class="headerlink" href="#command-reference" title="Link to this heading"></a></h2>
+<section id="tools-aeon-timeline-2-information">
+<h3>Tools &gt; Aeon Timeline 2 &gt; Information<a class="headerlink" href="#tools-aeon-timeline-2-information" title="Link to this heading"></a></h3>
+<p>Show information about an existing <em>Aeon Timeline 2</em> project, if any.
+<em>Aeon Timeline 2</em> and <em>mdnovel</em> file dates are compared.</p>
+</section>
+<section id="tools-aeon-timeline-2-update-the-timeline">
+<h3>Tools &gt; Aeon Timeline 2 &gt; Update the timeline<a class="headerlink" href="#tools-aeon-timeline-2-update-the-timeline" title="Link to this heading"></a></h3>
+<p>If a timeline exists, update it from <em>mdnovel</em>.</p>
+</section>
+<section id="tools-aeon-timeline-2-update-the-project">
+<h3>Tools &gt; Aeon Timeline 2 &gt; Update the project<a class="headerlink" href="#tools-aeon-timeline-2-update-the-project" title="Link to this heading"></a></h3>
+<p>Update the <em>mdnovel</em> project from the timeline, if existing.</p>
+</section>
+<section id="tools-aeon-timeline-2-add-or-update-moon-phase-data">
+<h3>Tools &gt; Aeon Timeline 2 &gt; Add or update moon phase data<a class="headerlink" href="#tools-aeon-timeline-2-add-or-update-moon-phase-data" title="Link to this heading"></a></h3>
+<p>The “Moon phase” event property consists of:</p>
+<ul class="simple">
+<li><p>the phase day (0 to 29, where 0=new moon, 15=full etc.),</p></li>
+<li><p>the visible shape,</p></li>
+<li><p>the fraction illuminated.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The moon phase calculation is based on a ‘do it in your head’ algorithm
+by John Conway. In its current form, it’s only valid for the 20th and
+21st centuries.</p>
+</div>
+</section>
+<section id="tools-aeon-timeline-2-open-aeon-timeline-2">
+<h3>Tools &gt; Aeon Timeline 2 &gt; Open Aeon Timeline 2<a class="headerlink" href="#tools-aeon-timeline-2-open-aeon-timeline-2" title="Link to this heading"></a></h3>
+<p>Same as clicking on the <img alt="Timeline" src="../_images/aeon2.png" /> button on the toolbar.</p>
+<p>Open the project’s timeline, if existing, with the <em>Aeon Timeline 2</em> application.
+Depending on the configuration (see below), the project is automatically locked.</p>
+</section>
+<section id="file-new-create-from-aeon-timeline-2">
+<h3>File &gt; New &gt; Create from Aeon Timeline 2…<a class="headerlink" href="#file-new-create-from-aeon-timeline-2" title="Link to this heading"></a></h3>
+<p>Open a file dialog to select a timeline. If no <em>mdnovel</em> project with
+the timeline’s file name exists, create a new one from the timeline.</p>
+</section>
+</section>
+<section id="control-conversion">
+<h2>Control conversion<a class="headerlink" href="#control-conversion" title="Link to this heading"></a></h2>
+<section id="prepare-your-timeline-for-export">
+<h3>Prepare your timeline for export<a class="headerlink" href="#prepare-your-timeline-for-export" title="Link to this heading"></a></h3>
+<p>After installation, you can copy a “mdnovel” template to the
+<em>Aeon Timeline 2</em> custom template folder. The easiest way is to create new
+timelines based on this template. It provides the entities and event
+properties that are converted to <em>mdnovel</em> by default.</p>
+<p>For existing timelines you have two choices:</p>
+<ul class="simple">
+<li><p>Option 1: Add or rename the required entities and event properties in
+the Aeon Timeline 2 settings.</p></li>
+<li><p>Option 2: Customize the <em>nv_aeon2</em> configuration to fit your
+timeline, see <a class="reference external" href="#custom-configuration">Custom configuration</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="synchronization-in-detail">
+<h2>Synchronization in detail<a class="headerlink" href="#synchronization-in-detail" title="Link to this heading"></a></h2>
+<section id="known-limitations">
+<h3>Known limitations<a class="headerlink" href="#known-limitations" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>“Narrative” events that begin before 0001-01-01 in the timeline, will
+not be synchronized with <em>mdnovel</em>, because <em>mdnovel</em> can not handle
+these dates.</p></li>
+<li><p>The same applies to the section duration in this case, i.e. the event
+duration in Timeline and the section duration in <em>mdnovel</em> may
+differ.</p></li>
+</ul>
+</section>
+<section id="conversion-rules-for-newly-created-mdnovel-projects">
+<h3>Conversion rules for newly created mdnovel projects<a class="headerlink" href="#conversion-rules-for-newly-created-mdnovel-projects" title="Link to this heading"></a></h3>
+<p>The names/column labels refer to timelines based on the “mdnovel”
+template.</p>
+<ul class="simple">
+<li><p>If an <em>Aeon</em> event title occurs more than once, the program aborts with
+an error message.</p></li>
+<li><p>Events assigned to the “Narrative” arc are converted to regular
+sections.</p></li>
+<li><p>New sections are put into a new chapter named “New sections”.</p></li>
+<li><p>All sections are sorted chronologically.</p></li>
+<li><p>The section status is “Outline”.</p></li>
+<li><p>The event title is used as section title (*).</p></li>
+<li><p>The start date is used as section date/time, if the start year is 1
+or above.</p></li>
+<li><p>The section duration is calculated, if the start year is 1 or above.</p></li>
+<li><p>Event tags are converted to section tags, if any (*).</p></li>
+<li><p>“Descriptions” are imported as section descriptions, if any (*).</p></li>
+<li><p>“Notes” are used as section notes, if any (*).</p></li>
+<li><p>“Participants” are imported as characters, if any (*).</p></li>
+<li><p>“Locations” are imported, if any (*).</p></li>
+<li><p>“Items” are imported, if any (*).</p></li>
+</ul>
+</section>
+<section id="update-rules-for-existing-mdnovel-projects">
+<h3>Update rules for existing mdnovel projects<a class="headerlink" href="#update-rules-for-existing-mdnovel-projects" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Only sections that have the same title as an event are updated.</p></li>
+<li><p>If an <em>Aeon</em> event title occurs more than once, the converter aborts
+with an error message.</p></li>
+<li><p>If a <em>mdnovel</em> section title occurs more than once, the converter
+aborts with an error message.</p></li>
+<li><p>Sections are marked “unused” if the associated event is deleted in
+<em>Aeon</em>.</p></li>
+<li><p>Section date, section time, and section duration are updated.</p></li>
+<li><p>Non-empty section description and section tags are updated.</p></li>
+<li><p>Notes of events with a matching title are appended to the section
+notes.</p></li>
+<li><p>The start date is overwritten, if the start year is 1 or above.</p></li>
+<li><p>The section duration is overwritten, if the start year is 1 or above.</p></li>
+<li><p>New “Normal” type sections are created from “Narrative” events, if
+missing.</p></li>
+<li><p>New sections are put into a new chapter named “New sections”.</p></li>
+<li><p>New plot lines, characters, locations, and items are added, if assigned to
+“Narrative” events.</p></li>
+<li><p>Arc, character, location, and item relationships are updated, if the
+entity names match.</p></li>
+<li><p>When processing unspecific “day/hour/minute” information, the default
+date from the <em>mdnovel</em> project is used. f there is no default date
+set, “today” is used.</p></li>
+</ul>
+</section>
+<section id="update-rules-for-aeon-timeline-2-projects">
+<h3>Update rules for Aeon Timeline 2 projects<a class="headerlink" href="#update-rules-for-aeon-timeline-2-projects" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>If an <em>Aeon</em> event title occurs more than once, the converter aborts
+with an error message.</p></li>
+<li><p>If a <em>mdnovel</em> section title occurs more than once, the converter
+aborts with an error message.</p></li>
+<li><p>Event date/time and event span are updated, if the start year is 1 or
+above.</p></li>
+<li><p>Updated event span is specified in days/hours/minutes as in
+<em>mdnovel</em>.</p></li>
+<li><p>Non-empty event description and event tags are updated.</p></li>
+<li><p>Event properties “Description” and “Notes” are created, if missing.</p></li>
+<li><p>Events created or updated from “Normal” sections are assigned to the
+<em>Narrative</em> arc.</p></li>
+<li><p>“Narrative” events are removed if the associated section is deleted
+in <em>mdnovel</em>.</p></li>
+<li><p>Entity types “Arc”, “Character”, “Location”, and “Item” are created,
+if missing.</p></li>
+<li><p>A “Narrative” arc is created, if missing.</p></li>
+<li><p>A “Storyline” arc role is created, if missing.</p></li>
+<li><p>New arcs, characters, locations, and items are added, if assigned to
+sections.</p></li>
+<li><p>Arc, character, location, and item relationships are updated, if the
+entity names match.</p></li>
+<li><p>When creating events from sections without any date/time information,
+they get the default date from the <em>mdnovel</em> project, and are sorted
+in reading order. If there is no default date set, “today” is used.</p></li>
+<li><p>When processing unspecific “day/hour/minute” information, the default
+date from the <em>mdnovel</em> project is used for date calculation.
+If there is no default date set, “today” is used as reference date.</p></li>
+</ul>
+</section>
+</section>
+<section id="custom-configuration">
+<h2>Custom configuration<a class="headerlink" href="#custom-configuration" title="Link to this heading"></a></h2>
+<p>You can override the default settings by providing a configuration file.
+Be always aware that faulty entries may cause program errors.</p>
+<section id="global-configuration">
+<h3>Global configuration<a class="headerlink" href="#global-configuration" title="Link to this heading"></a></h3>
+<p>An optional global configuration file named <code class="docutils literal notranslate"><span class="pre">nv_aeon2.ini</span></code>
+an be placed in the configuration directory of the installation.
+It is applied to any project. Its
+entries override nv_aeon2’s built-in constants. This is the path:
+<code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.novx\config\nv_aeon2.ini</span></code></p>
+</section>
+<section id="local-project-configuration">
+<h3>Local project configuration<a class="headerlink" href="#local-project-configuration" title="Link to this heading"></a></h3>
+<p>An optional project configuration file named <code class="docutils literal notranslate"><span class="pre">nv_aeon2.ini</span></code> can be
+placed in your project directory, i.e. the folder containing your
+<em>mdnovel</em> and <em>Aeon Timeline 2</em> project files. It is only applied to this
+project. Its entries override aeon2nv’s built-in constants as well as
+the global configuration, if any.</p>
+</section>
+<section id="how-to-provide-modify-a-configuration-file">
+<h3>How to provide/modify a configuration file<a class="headerlink" href="#how-to-provide-modify-a-configuration-file" title="Link to this heading"></a></h3>
+<p>You find the a sample configuration file with the
+<em>nv_aeon2</em> default values in the <em>mdnovel</em> installation
+directory under</p>
+<p><code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.novx\nv_aeon2_sample\</span></code></p>
+<p>You best make a copy and edit it.</p>
+<ul class="simple">
+<li><p>The SETTINGS section mainly refers to custom property, role, and type
+names.</p></li>
+<li><p>Comment lines begin with a <code class="docutils literal notranslate"><span class="pre">#</span></code> number sign. In the example, they
+refer to the code line immediately above.</p></li>
+</ul>
+<p>This is the configuration file explained:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[SETTINGS]</span>
+
+<span class="na">narrative_arc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Narrative</span>
+
+<span class="c1"># Name of the user-defined &quot;Narrative&quot; arc.</span>
+
+<span class="na">property_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Description</span>
+
+<span class="c1"># Name of the user-defined section description property.</span>
+
+<span class="na">property_notes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Notes</span>
+
+<span class="c1"># Name of the user-defined section notes property.</span>
+
+<span class="na">property_moonphase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Moon phase</span>
+
+<span class="c1"># Name of the user-defined moon phase property.</span>
+
+<span class="na">type_arc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Arc</span>
+
+<span class="c1"># Name of the user-defined &quot;Arc&quot; type</span>
+
+<span class="na">type_character</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Character</span>
+
+<span class="c1"># Name of the user-defined &quot;Character&quot; type</span>
+
+<span class="na">type_location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Location</span>
+
+<span class="c1"># Name of the user-defined &quot;Location&quot; type</span>
+
+<span class="na">type_item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Item</span>
+
+<span class="c1"># Name of the user-defined &quot;Item&quot; type</span>
+
+<span class="na">role_arc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Arc</span>
+
+<span class="c1"># Name of the user-defined role for regular arcs.</span>
+
+<span class="na">role_plotline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Storyline</span>
+
+<span class="c1"># Name of the user-defined role for plot line arcs.</span>
+
+<span class="na">role_character</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Participant</span>
+
+<span class="c1"># Name of the user-defined role for characters in a section.</span>
+
+<span class="na">role_location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Location</span>
+
+<span class="c1"># Name of the user-defined role for section locations.</span>
+
+<span class="na">role_item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Item</span>
+
+<span class="c1"># Name of the user-defined role for items in a section.</span>
+
+<span class="na">color_section</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Red</span>
+
+<span class="c1"># Color of new section events</span>
+
+<span class="na">color_event</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Yellow</span>
+
+<span class="c1"># Color of new non-section events</span>
+
+
+<span class="k">[OPTIONS]</span>
+
+<span class="na">add_moonphase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">No</span>
+
+<span class="c1"># Yes: Add the moon phase to the event properties.</span>
+<span class="c1"># No: Update moon phase, if already defined as event property.</span>
+
+<span class="na">lock_on_export</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">No</span>
+
+<span class="c1"># Yes: Lock the mdnovel project when opening the timeline.</span>
+<span class="c1"># No: Do not lock the mdnovel project when opening the timeline.</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your custom configuration file does not have to contain all the
+entries listed above. The changed entries are sufficient.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../plugins.html" class="btn btn-neutral float-left" title="Plugins" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../nv_clipboard/index.html" class="btn btn-neutral float-right" title="nv_clipboard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Peter Triesberger.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

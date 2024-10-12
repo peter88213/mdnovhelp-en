@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>scap_novx &mdash; mdnovel User guide 4.5.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="../_static/nLogo32.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=772b3574"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="novx_xtg" href="../novx_xtg/index.html" />
+    <link rel="prev" title="Tools" href="../tools.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            mdnovel User guide
+          </a>
+              <div class="version">
+                Version 0.5+
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preparations.html">Preparations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../desktop.html">Desktop overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_concepts.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plotting.html">Plotting with mdnovel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../command_reference.html">Command reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../properties.html">Properties reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plugins.html">Plugins</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tools.html">Tools</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">scap_novx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing-the-program">Installing the program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instructions-for-use">Instructions for use</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#intended-usage">Intended usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#command-line-usage">Command line usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mode-of-operation">Mode of operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conversion-rules">Conversion rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-mark-notes-for-export">How to mark notes for export</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#import-styles-optional">Import styles (optional)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mark-sections">Mark sections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mark-notes">Mark notes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mark-tags">Mark tags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mark-locations">Mark locations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mark-major-characters">Mark major characters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mark-minor-characters">Mark minor characters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mark-items">Mark items</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-configuration">Custom configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#global-configuration">Global configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#local-project-configuration">Local project configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-provide-modify-a-configuration-file">How to provide/modify a configuration file</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-path">Installation path</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../novx_xtg/index.html">novx_xtg</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About this user guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">mdnovel User guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../tools.html">Tools</a></li>
+      <li class="breadcrumb-item active">scap_novx</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <p><img alt="external-link" src="../_images/external-link.png" /> <a class="reference external" href="https://peter88213.github.io/mdnovhelp-de/scap_novx/">German</a></p>
+<hr class="docutils" />
+<section id="scap-novx">
+<h1>scap_novx<a class="headerlink" href="#scap-novx" title="Link to this heading"></a></h1>
+<p><strong>User guide</strong></p>
+<p>This page refers to the latest <a class="reference external" href="https://github.com/peter88213/scap_novx/">scap_novx</a> release.</p>
+<p>The scap_novx Python script creates a <em>mdnovel</em> project
+from a Scapple outline.</p>
+<section id="installing-the-program">
+<h2>Installing the program<a class="headerlink" href="#installing-the-program" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Either launch the downloaded <strong>scap_novx_vx.x.x.pyzw</strong>
+file by double-clicking (Windows/Linux desktop),</p></li>
+<li><p>or execute <code class="docutils literal notranslate"><span class="pre">`python</span> <span class="pre">scap_novx_vx.x.x.pyzw`</span></code> (Windows),
+resp. <code class="docutils literal notranslate"><span class="pre">`python3</span> <span class="pre">scap_novx_vx.x.x.pyzw`</span></code> (Linux)
+on the command line.</p></li>
+</ul>
+<p><em>“x.x.x”</em> means the version number.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Many web browsers recognize the download as an executable file
+and offer to open it immedately.
+This starts the installation.</p>
+<p>However, depending on your security settings, your browser may
+initially  refuse  to download the executable file.
+In this case, your confirmation or an additional action is required.
+If this is not possible, you have the option of downloading
+the zip file.</p>
+</div>
+</section>
+<section id="instructions-for-use">
+<h2>Instructions for use<a class="headerlink" href="#instructions-for-use" title="Link to this heading"></a></h2>
+<section id="intended-usage">
+<h3>Intended usage<a class="headerlink" href="#intended-usage" title="Link to this heading"></a></h3>
+<p>The included installation script prompts you to create
+a shortcut on the desktop.
+You can launch the program by dragging a <em>scap</em> file
+and dropping it on the shortcut icon.</p>
+</section>
+<section id="command-line-usage">
+<h3>Command line usage<a class="headerlink" href="#command-line-usage" title="Link to this heading"></a></h3>
+<p>Alternatively, you can</p>
+<ul class="simple">
+<li><p>launch the program on the command line passing the
+scapple file as an argument, or</p></li>
+<li><p>launch the program via a batch file.</p></li>
+</ul>
+<p>usage: <code class="docutils literal notranslate"><span class="pre">scap_novx.py</span> <span class="pre">[--silent]</span> <span class="pre">Sourcefile</span></code></p>
+<section id="positional-arguments">
+<h4>positional arguments:<a class="headerlink" href="#positional-arguments" title="Link to this heading"></a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Sourcefile</span></code></p>
+<p>The path of the Scapple outline file.</p>
+</section>
+<section id="optional-arguments">
+<h4>optional arguments:<a class="headerlink" href="#optional-arguments" title="Link to this heading"></a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">--silent</span></code>  suppress error messages and the request
+to confirm overwriting</p>
+</section>
+</section>
+</section>
+<section id="mode-of-operation">
+<h2>Mode of operation<a class="headerlink" href="#mode-of-operation" title="Link to this heading"></a></h2>
+<p><em>scap_novx</em> generates a new <em>mdnovel</em> project file with
+the same file name as the Scapple source file,
+but with the extension <code class="docutils literal notranslate"><span class="pre">.novx</span></code>.
+It is placed in the same directory as the source file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the <em>mdnovel</em> project already exists, it would
+not be overwritten.
+Character/Location/Item XML files are generated instead.
+They can be imported into any <em>mdnovel</em> project.</p>
+</div>
+</section>
+<section id="conversion-rules">
+<h2>Conversion rules<a class="headerlink" href="#conversion-rules" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Notes with a shadow are converted to sections.</p></li>
+<li><p>Sections are ordered by their position in the Scapple diagram
+(from top left to bottom right).</p></li>
+<li><p>Notes with a “cloud” border without shadow are converted to section
+and character notes.</p></li>
+<li><p>Notes with a square border are converted to tags.</p></li>
+<li><p>Notes with red text are converted to major characters.</p></li>
+<li><p>Notes with purple text are converted to minor characters.</p></li>
+<li><p>Notes with blue text are converted to locations.</p></li>
+<li><p>Notes with green text are converted to items.</p></li>
+<li><p>Assign characters/locations/items to a section by connecting
+the corresponding notes.</p></li>
+<li><p>Assign tags to sections/characters/locations/items by
+connecting the corresponding notes.</p></li>
+<li><p>Assign a viewpoint character to a section by creating an arrow
+pointing from the character to the section.
+If a section is pointed to by several characters, or by no character,
+the viewpoint is random.</p></li>
+</ul>
+</section>
+<section id="how-to-mark-notes-for-export">
+<h2>How to mark notes for export<a class="headerlink" href="#how-to-mark-notes-for-export" title="Link to this heading"></a></h2>
+<section id="import-styles-optional">
+<h3>Import styles (optional)<a class="headerlink" href="#import-styles-optional" title="Link to this heading"></a></h3>
+<p>The scap_novx distribution comes with a sample Scapple project
+<em>styles.scap</em> including all required styles.</p>
+<p>You find this a sample project in the <em>mdnovel</em> installation
+directory under</p>
+<p><code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.novx\scap_novx\sample\</span></code></p>
+<p>You can either use this diagram as a template,
+or import the styles into your own Scapple diagram.</p>
+<figure class="align-default" id="id1">
+<img alt="Screenshot" src="../_images/import_styles.png" />
+<figcaption>
+<p><span class="caption-text">Screenshot: Import styles dialog</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>In the file picker dialog, select <code class="docutils literal notranslate"><span class="pre">&lt;unzipped</span> <span class="pre">scap_novx</span> <span class="pre">release</span>
+<span class="pre">folder&gt;\sample\styles.scap</span></code>. Then you can apply the styles
+via context menu.</p>
+<figure class="align-default" id="id2">
+<img alt="Screenshot" src="../_images/apply_styles.png" />
+<figcaption>
+<p><span class="caption-text">Screenshot: Apply style menu</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mark-sections">
+<h3>Mark sections<a class="headerlink" href="#mark-sections" title="Link to this heading"></a></h3>
+<p>Either apply the “Section” style, if any, via context menu,
+or tick “Shadow” in the Inspector to mark the note as section.</p>
+<figure class="align-default" id="id3">
+<img alt="Screenshot" src="../_images/mark_section.png" />
+<figcaption>
+<p><span class="caption-text">Screenshot: Set note shadow</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mark-notes">
+<h3>Mark notes<a class="headerlink" href="#mark-notes" title="Link to this heading"></a></h3>
+<p>Either apply the “Note” style, if any, via context menu,
+or make the note’s border style “Cloud” in the Inspector.</p>
+</section>
+<section id="mark-tags">
+<h3>Mark tags<a class="headerlink" href="#mark-tags" title="Link to this heading"></a></h3>
+<p>Either apply the “Tag” style, if any, via context menu,
+or make the note’s border style “Square” in the Inspector.</p>
+</section>
+<section id="mark-locations">
+<h3>Mark locations<a class="headerlink" href="#mark-locations" title="Link to this heading"></a></h3>
+<p>Either apply the “Location” style, if any, via context menu,
+or tick the big blue field above the text color swatch in the Inspector.</p>
+<figure class="align-default" id="id4">
+<img alt="Screenshot" src="../_images/mark_location.png" />
+<figcaption>
+<p><span class="caption-text">Screenshot: Set text color</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="mark-major-characters">
+<h3>Mark major characters<a class="headerlink" href="#mark-major-characters" title="Link to this heading"></a></h3>
+<p>Either apply the “MajorCharacter” style, if any, via context menu,
+or tick the big red field above the text color swatch in the Inspector.</p>
+</section>
+<section id="mark-minor-characters">
+<h3>Mark minor characters<a class="headerlink" href="#mark-minor-characters" title="Link to this heading"></a></h3>
+<p>Either apply the “MinorCharacter” style, if any, via context menu,
+or tick the big purple field above the text color swatch in the Inspector.</p>
+</section>
+<section id="mark-items">
+<h3>Mark items<a class="headerlink" href="#mark-items" title="Link to this heading"></a></h3>
+<p>Either apply the “Item” style, if any, via context menu,
+or tick the big green field above the text color swatch in the Inspector.</p>
+</section>
+</section>
+<section id="custom-configuration">
+<h2>Custom configuration<a class="headerlink" href="#custom-configuration" title="Link to this heading"></a></h2>
+<p>You can override the default settings by providing a configuration
+file. Be always aware that faulty entries may cause program errors.</p>
+<section id="global-configuration">
+<h3>Global configuration<a class="headerlink" href="#global-configuration" title="Link to this heading"></a></h3>
+<p>An optional global configuration file can be placed in the
+configuration directory in your user profile.
+It is applied to any project.
+Its entries override scap_novx’s built-in constants.
+This is the path:
+<code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.novx\scap_novx\scap_novx.ini</span></code></p>
+</section>
+<section id="local-project-configuration">
+<h3>Local project configuration<a class="headerlink" href="#local-project-configuration" title="Link to this heading"></a></h3>
+<p>An optional project configuration file <code class="docutils literal notranslate"><span class="pre">scap_novx.ini2novx.ini</span></code>
+can be placed in your project directory, i.e. the folder containing
+your <em>mdnovel</em> and Timeline project files.
+It is only applied to this project.
+Its entries override scap_novx’s built-in constants as well as
+the global configuration, if any.</p>
+</section>
+<section id="how-to-provide-modify-a-configuration-file">
+<h3>How to provide/modify a configuration file<a class="headerlink" href="#how-to-provide-modify-a-configuration-file" title="Link to this heading"></a></h3>
+<p>You find the a sample configuration file with the
+<em>scap_novx</em> default values in the <em>mdnovel</em> installation
+directory under</p>
+<p><code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.novx\scap_novx\sample\</span></code></p>
+<p>You best make a copy and edit it.</p>
+<ul class="simple">
+<li><p>The SETTINGS section mainly refers to colors, i.e. The text colors that
+mark the characters/locations/items in Scapple. If you change them,
+the program might behave differently than described in the description
+of the conversion rules below.</p></li>
+<li><p>The OPTIONS section comprises options for regular program execution.</p></li>
+<li><p>Comment lines begin with a <code class="docutils literal notranslate"><span class="pre">#</span></code> number sign. In the example,
+refer to the code line immediately above.</p></li>
+</ul>
+<p>This is the configuration file explained:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[SETTINGS]</span>
+
+<span class="na">location_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0.0 0.0 1.0</span>
+
+<span class="c1"># RGB text color that marks the locations in Scapple.</span>
+
+<span class="na">item_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0.0 0.5 0.0</span>
+
+<span class="c1"># RGB text color that marks the items in Scapple.</span>
+
+<span class="na">major_chara_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1.0 0.0 0.0</span>
+
+<span class="c1"># RGB text color that marks the major racters in Scapple.</span>
+
+<span class="na">minor_chara_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0.5 0.0 0.5</span>
+
+<span class="c1"># RGB text color that marks the minor characters in Scapple.</span>
+
+<span class="k">[OPTIONS]</span>
+
+<span class="na">export_sections</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Yes</span>
+
+<span class="c1"># Yes: create sections from Scapple notes.</span>
+
+<span class="na">export_characters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Yes</span>
+
+<span class="c1"># Yes: create characters from Scapple notes.</span>
+
+<span class="na">export_locations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Yes</span>
+
+<span class="c1"># Yes: create locations from Scapple notes.</span>
+
+<span class="na">export_items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Yes</span>
+
+<span class="c1"># Yes: create items from Scapple notes.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="installation-path">
+<h2>Installation path<a class="headerlink" href="#installation-path" title="Link to this heading"></a></h2>
+<p>The setup script installs <em>scap_novx.py</em> in a defined place.
+This is the installation path on Windows:</p>
+<p><code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.novx\scap_novx</span></code></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../tools.html" class="btn btn-neutral float-left" title="Tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../novx_xtg/index.html" class="btn btn-neutral float-right" title="novx_xtg" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Peter Triesberger.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

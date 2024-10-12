@@ -1,0 +1,31 @@
+Help menu
+=========
+
+**Quick access to the help pages for mdnovel and its plugins**
+
+.. figure:: _images/help_menu01.png
+   :alt: mdnovel screenshot
+
+.. note:: 
+   The *Help* menu can be extended by plugins adding links to their
+   specific help pages.
+
+.. hint::
+   With ``F1`` you can call up a help page corresponding to the context.
+
+Online Help
+-----------
+
+With **Help > Online Help**,
+you can launch your system web browser with the *mdnovel* online help URL.
+
+mdnovel home page
+-------------------
+
+With **Help > mdnovel home page**
+you can launch your system web browser with the *mdnovel* home page URL.
+
+.. hint::
+   This is a quick way to get to the download link of the most recent 
+   *mdnovel* version.
+

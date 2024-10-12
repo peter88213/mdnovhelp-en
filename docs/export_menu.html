@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Export menu &mdash; mdnovel User guide 4.5.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="_static/nLogo32.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=772b3574"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Import menu" href="import_menu.html" />
+    <link rel="prev" title="Project notes menu" href="project_notes_menu.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            mdnovel User guide
+          </a>
+              <div class="version">
+                Version 0.5+
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="command_reference.html">Command reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="file_menu.html">File menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="view_menu.html">View menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="part_menu.html">Part menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter_menu.html">Chapter menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="section_menu.html">Section menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="characters_menu.html">Characters menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="locations_menu.html">Locations menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="items_menu.html">Items menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plot_menu.html">Plot menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_notes_menu.html">Project notes menu</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Export menu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#manuscript-for-editing">Manuscript for editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manuscript-for-third-party-word-processing">Manuscript for third-party word processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manuscript-for-printing-export-only">Manuscript for printing (export only)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#brief-synopsis-export-only">Brief synopsis (export only)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cross-references-export-only">Cross references (export only)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#characters-locations-items-data-files">Characters/locations/items data files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options">Options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ask-before-opening-exported-documents">Ask before opening exported documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lock-the-project-after-document-export-for-editing">Lock the project after document export for editing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="import_menu.html">Import menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools_menu.html">Tools menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help_menu.html">Help menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tree_context_menu.html">Tree view context menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolbar.html">The toolbar</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mdnovel User guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="command_reference.html">Command reference</a></li>
+      <li class="breadcrumb-item active">Export menu</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="export-menu">
+<h1>Export menu<a class="headerlink" href="#export-menu" title="Link to this heading"></a></h1>
+<p><strong>File export</strong></p>
+<figure class="align-default">
+<img alt="mdnovel screenshot" src="_images/export_menu01.png" />
+</figure>
+<section id="manuscript-for-editing">
+<h2>Manuscript for editing<a class="headerlink" href="#manuscript-for-editing" title="Link to this heading"></a></h2>
+<p><strong>Export an ODT document that can be imported again after editing</strong></p>
+<p>With <strong>Export &gt;  Manuscript for editing</strong>,
+you can create a text document that is split into sections
+(to be seen in the Navigator).
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_manuscript_tmp</span></code>.</p>
+<ul>
+<li><p>Only “normal” chapters and sections are exported. Chapters and
+sections marked “unused” are not exported.</p></li>
+<li><p>Section titles are invisible, but appear in the <em>Navigator</em>.</p></li>
+<li><p>Chapters and sections can neither be rearranged nor deleted.</p></li>
+<li><p>With <em>Writer</em>, you can split sections by
+inserting headings or a section divider:</p>
+<ul class="simple">
+<li><p><em>Heading 1</em> → New part title. Optionally, you can add a
+description, separated by <code class="docutils literal notranslate"><span class="pre">|</span></code>.</p></li>
+<li><p><em>Heading 2</em> → New chapter title. Optionally, you can add a
+description, separated by <code class="docutils literal notranslate"><span class="pre">|</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">###</span></code> → Section divider. Optionally, you can append the section
+title to the section divider. You can also add a description,
+separated by <code class="docutils literal notranslate"><span class="pre">|</span></code>.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Documents with split sections are automatically
+discarded after the <em>mdnovel</em> project is updated.</p>
+</div>
+</li>
+<li><p>Text markup: Bold and italics are supported. Other highlighting such
+as underline and strikethrough are lost.</p></li>
+</ul>
+</section>
+<section id="manuscript-for-third-party-word-processing">
+<h2>Manuscript for third-party word processing<a class="headerlink" href="#manuscript-for-third-party-word-processing" title="Link to this heading"></a></h2>
+<p><strong>Export an ODT document that can be imported again after editing</strong></p>
+<p>With <strong>Export &gt;  Manuscript for third-party word processing</strong>,
+you can create a text document with visible section markers.
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_proof_tmp</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This document retains its section information even if it is
+converted to other formats and back again. This may work with
+popular commercial word processors and even with web-based word
+processors such as Google Docs.</p>
+</div>
+<ul>
+<li><p>Only “normal” chapters and sections are exported. Chapters and
+sections marked “unused” are not exported.</p></li>
+<li><p>The document contains chapter and section headings. However, changes
+will not be reimported.</p></li>
+<li><p>The document contains section <code class="docutils literal notranslate"><span class="pre">[scx]</span></code> markers. <strong>Do not touch lines
+containing the markers</strong> if you want to be able to write the document
+back to <em>mdnovel</em> format.</p></li>
+<li><p>Chapters and sections can neither be rearranged nor deleted.</p></li>
+<li><p>When editing the document, you can split sections by inserting
+headings or a section divider:</p>
+<ul class="simple">
+<li><p><em>Heading 1</em> → New part title. Optionally, you can add a
+description, separated by <code class="docutils literal notranslate"><span class="pre">|</span></code>.</p></li>
+<li><p><em>Heading 2</em> → New chapter title. Optionally, you can add a
+description, separated by <code class="docutils literal notranslate"><span class="pre">|</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">###</span></code> → Section divider. Optionally, you can append the section
+title to the section divider. You can also add a description,
+separated by <code class="docutils literal notranslate"><span class="pre">|</span></code>.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Documents with split sections are automatically
+discarded after the <em>mdnovel</em> project is updated.</p>
+</div>
+</li>
+<li><p>Text markup: Bold and italics are supported. Other highlighting such
+as underline and strikethrough are lost.</p></li>
+</ul>
+</section>
+<section id="manuscript-for-printing-export-only">
+<h2>Manuscript for printing (export only)<a class="headerlink" href="#manuscript-for-printing-export-only" title="Link to this heading"></a></h2>
+<p><strong>Export an ODT document</strong></p>
+<p>With <strong>Export &gt;  Manuscript for printing (export only)</strong>,
+you can create a text document for further use,
+e.g. a final document when you are finished with <em>mdnovel</em>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>In contrast to the manuscript for editing, this document is not divided
+internally into sections, which could facilitate further processing and
+reformatting.</p>
+</div>
+<ul class="simple">
+<li><p>The document is placed in the same folder as the project.</p></li>
+<li><p>Document’s <strong>filename</strong>: <code class="docutils literal notranslate"><span class="pre">&lt;project</span> <span class="pre">name&gt;.odt</span></code>.</p></li>
+<li><p>Only “normal” chapters and sections are exported. Chapters and
+sections marked “unused” are not exported.</p></li>
+<li><p>Part titles appear as first level heading.</p></li>
+<li><p>Chapter titles appear as second level heading.</p></li>
+<li><p>Sections are separated by <code class="docutils literal notranslate"><span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span></code>. The first line is not indented.</p></li>
+<li><p>Starting from the second paragraph, paragraphs begin with indentation
+of the first line.</p></li>
+<li><p>Sections marked “attach to previous section” appear like continuous
+paragraphs.</p></li>
+<li><p>Text markup: Bold and italics are supported. Other highlighting such
+as underline and strikethrough are lost.</p></li>
+<li><p>The first paragraph of each chapter is assigned the paragraph style
+<em>Chapter beginning</em> which is by default like the body text without
+indentiation.
+By modifying this paragraph style you can give a special look
+to the beginnings ot the chapters, e.g. with initials.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you prefer simple blank lines instead of the three-asterisks
+in your final document,
+you can achieve this using “Find and replace”.
+This is particularly convenient with a macro that comes with the
+<a class="reference external" href="https://github.com/peter88213/mdnovel-tools/">mdnovel-tools</a>
+extension.</p>
+</div>
+</section>
+<section id="brief-synopsis-export-only">
+<h2>Brief synopsis (export only)<a class="headerlink" href="#brief-synopsis-export-only" title="Link to this heading"></a></h2>
+<p><strong>Export an ODT document</strong></p>
+<p>With <strong>Export &gt;  Brief synopsis (export only)</strong>,
+you can create a text document containing a brief synopsis
+with part, chapter, and sections titles only.
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_brf_synopsis</span></code>.</p>
+<ul class="simple">
+<li><p>Only “normal” chapters and sections are exported. Chapters and
+sections marked “unused” are not exported.</p></li>
+<li><p>Part titles appear as first level heading.</p></li>
+<li><p>Chapter titles appear as second level heading.</p></li>
+<li><p>Section titles appear as plain paragraphs.</p></li>
+</ul>
+</section>
+<section id="cross-references-export-only">
+<h2>Cross references (export only)<a class="headerlink" href="#cross-references-export-only" title="Link to this heading"></a></h2>
+<p><strong>Export an ODT document</strong></p>
+<p>With <strong>Export &gt;  Cross references (export only)</strong>,
+you can create a text document containing navigable cross references.
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_xref</span></code>.</p>
+<p>The cross references are:</p>
+<ul class="simple">
+<li><p>Sections per character,</p></li>
+<li><p>sections per location,</p></li>
+<li><p>sections per item,</p></li>
+<li><p>sections per tag,</p></li>
+<li><p>characters per tag,</p></li>
+<li><p>locations per tag,</p></li>
+<li><p>items per tag.</p></li>
+</ul>
+</section>
+<section id="characters-locations-items-data-files">
+<h2>Characters/locations/items data files<a class="headerlink" href="#characters-locations-items-data-files" title="Link to this heading"></a></h2>
+<p><strong>Export XML files that can be imported into other projects</strong></p>
+<p>With <strong>Export &gt;  Characters/locations/items data files</strong>,
+you can create a set of XML files containing the project’s characters,
+locations, and items with all their properties. These files can be used
+to transfer the characters, locations, and items to another project.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>To import XML data files from another project, use the <strong>Import</strong>
+command in the <strong>Characters</strong>, <strong>Locations</strong>, or <strong>Items</strong> menu.</p>
+</div>
+</section>
+<section id="options">
+<h2>Options<a class="headerlink" href="#options" title="Link to this heading"></a></h2>
+<p><strong>Project independent program settings</strong></p>
+<p>With <strong>Export &gt;  Options</strong>,
+You can open a dialog for settings concerning the document export.</p>
+<figure class="align-default">
+<img alt="mdnovel screenshot" src="_images/export_menu02.png" />
+</figure>
+<section id="ask-before-opening-exported-documents">
+<h3>Ask before opening exported documents<a class="headerlink" href="#ask-before-opening-exported-documents" title="Link to this heading"></a></h3>
+<p>This checkbox controls the behavior on document export.</p>
+<ul class="simple">
+<li><p>If ticked, you will be asked whether you want to
+have <em>mdnovel</em> launch <em>Writer</em> or <em>Calc</em> with the newly created
+document opened.</p></li>
+<li><p>If unticked, <em>mdnovel</em> will launch <em>Writer</em> or
+<em>Calc</em> with the newly created document opened right away.</p></li>
+</ul>
+</section>
+<section id="lock-the-project-after-document-export-for-editing">
+<h3>Lock the project after document export for editing<a class="headerlink" href="#lock-the-project-after-document-export-for-editing" title="Link to this heading"></a></h3>
+<p>This checkbox controls the behavior on opening documents for editing.</p>
+<ul class="simple">
+<li><p>If ticked, <em>mdnovel</em> will <a class="reference external" href="basic_concepts.html#project-lock">lock the project</a> when launching <em>Writer</em> or <em>Calc</em>.</p></li>
+<li><p>If unticked, <em>mdnovel</em> won’t lock the project when launching
+<em>Writer</em> or <em>Calc</em>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="project_notes_menu.html" class="btn btn-neutral float-left" title="Project notes menu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="import_menu.html" class="btn btn-neutral float-right" title="Import menu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Peter Triesberger.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
