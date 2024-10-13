@@ -54,8 +54,6 @@ Change Level
 With **Plot > Change Level**,
 you can change the level of the selected stages.
 
-.. figure:: _images/plot_menu02.png
-   :alt: mdnovel screenshot
 
 -  **1st Level** is displayed in bold face.
 -  **2nd Level** is displayed in regular font.

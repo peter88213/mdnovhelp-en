@@ -142,6 +142,26 @@ you can detach or dock the element properties window .
 .. hint::
    On closing the detached window, the properties are docked again.
 
+Change theme
+------------
+
+**Change the looks of the application**
+
+With **View > Change theme** you can open a pop-up window with a 
+theme changer dialog. It is advised to restart *mdnovel* after
+selecting another theme. 
+
+.. hint::
+   To have a `wider choice <https://ttkthemes.readthedocs.io/en/latest/themes.html>`__, 
+   you can `install the ttkthemes package <https://ttkthemes.readthedocs.io/en/latest/installation.html>`__.
+
+.. note::
+   Actually, this feature is more intended for Linux, where the default theme looks pretty stale, 
+   and there are plenty of desktops, each with a different look.
+
+   On Windows, *mdnovel* uses a lot of native widgets by default, you can hardly do better with custom themes.
+   
+
 
 Options
 -------
@@ -150,9 +170,6 @@ Options
 
 With **View >  Options**,
 You can open a dialog for settings concerning the display.
-
-.. figure:: _images/view_menu02.png
-   :alt: mdnovel screenshot
 
 
 Coloring mode
