@@ -15,7 +15,6 @@ Command reference
    plot_menu
    project_notes_menu
    export_menu
-   import_menu
    tools_menu
    help_menu
    tree_context_menu

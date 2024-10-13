@@ -4,8 +4,6 @@ Chapter menu
 
 **Chapter operation**
 
-.. figure:: _images/chapter_menu01.png
-   :alt: mdnovel screenshot
 
 Add
 ---
@@ -31,9 +29,6 @@ With **Chapter > Set Type**,
 you can set the `type <basic_concepts.html#part-chapter-section-types>`__
 of the selected chapter to *Normal* or *Unused* .
 
-.. figure:: _images/chapter_menu02.png
-   :alt: mdnovel screenshot
-
 .. note::
    Setting the type of a chapter to *Unused* will also make its sections *Unused*.
 
@@ -46,21 +41,17 @@ Change Level
 With **Chapter > Change Level**,
 you can turn chapters into parts and vice versa.
 
-.. figure:: _images/chapter_menu03.png
-   :alt: mdnovel screenshot
-
 -  **1st Level** converts the selected chapters into parts.
 -  **2nd Level** converts the selected parts into chapters.
 
 
-Export chapter descriptions for editing
----------------------------------------
+Export chapter descriptions
+---------------------------
 
-**Export an ODT document that can be imported again after editing**
+**Export a Markdown-formatted document**
 
-With **Chapter > Export chapter descriptions for editing**,
+With **Chapter > Export chapter descriptions**,
 you can create a text document that contains
-a **brief synopsis** with part/chapter headings and chapter descriptions
-that can be edited and reimported.
-File name suffix is ``_chapters_tmp``.
+a **brief synopsis** with part/chapter headings and chapter descriptions.
+File name suffix is ``_chapters``.
 

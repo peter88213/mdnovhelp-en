@@ -12,17 +12,15 @@ release. You can open it with **Help > Online help**.
    :maxdepth: 2
    :caption: Contents
    
-   introduction
    preparations
    desktop
    basic_concepts
    getting_started
+   editor
    writing
    plotting
    command_reference
    properties
-   plugins
-   tools
    about
 
 -----------------

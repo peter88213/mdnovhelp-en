@@ -10,9 +10,6 @@ You can edit the properties of the selected chapter or part.
    Level** entry in the context menu, the **Part** menu, or the **Chapter** 
    menu.
    
-.. figure:: _images/chapter_view01.png
-   :alt: Screenshot
-
 Title and description
 ---------------------
 
@@ -49,9 +46,6 @@ Links
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/world_view02.png
-   :alt: Screenshot
-   
 This is a list for image and research document links.
 
 Although *mdnovel* holds some character/location/item data, it is

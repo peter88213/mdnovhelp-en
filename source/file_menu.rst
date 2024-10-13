@@ -3,9 +3,6 @@ File menu
 
 **File operation**
 
-.. figure:: _images/file_menu01.png
-   :alt: mdnovel screenshot
-
 New
 ---
 
@@ -18,8 +15,6 @@ This will open a submenu.
 	The submenu can be extended by plugins to add more file types
 	from which a *mdnovel* project can be created.
 
-.. figure:: _images/file_menu02.png
-   :alt: mdnovel screenshot
 
 Empty project
    -  This will close the current project and create a blank project.
@@ -28,17 +23,17 @@ Empty project
       when saving the project.
 
 
-Create from ODT...
+Create from Markdown...
    -  This will close the current project and open a file dialog asking
-      for an ODT document to create the new projec from.
+      for a Markdown document to create the new projec from.
    -  The newly created project is saved automatically in the same
-      directory as the ODT document, using its file name and the extension
-      *.novx*.
-   -  If a project with the same file name as the ODT document already
+      directory as the Markdown document, using its file name and the extension
+      *.mdnov*.
+   -  If a project with the same file name as the Markdown document already
       exists in the directory, no new project will be created.
    -  If you select a previously exported document belonging to an existing
       project, this project will be updated and loaded.
-   -  The ODT document can either be a `Work-in-progress
+   -  The Markdown document can either be a `Work-in-progress
       <getting_started.html#starting-with-a-work-in-progress>`__,
       i.e. a regular novel manuscript with chapter headings and section contents,
       r an `outline <getting_started.html#starting-with-an-outline>`__
@@ -64,7 +59,7 @@ Reload
 **Reload the novel project**
 
 With **File > Reload** or ``Ctrl``-``R``,
-you can overwrite the project in the memory 
+you can overwrite the project in the memory
 with the last saved version.
 
 .. tip::
@@ -81,7 +76,7 @@ Restore backup
 **Restore the latest backup file**
 
 With **File > Restore backup** or ``Ctrl``-``B``,
-you can overwrite the project in the memory 
+you can overwrite the project in the memory
 with the latest backup file.
 You will get a warning, because changes may be lost.
 
@@ -106,27 +101,6 @@ you can refresh the tree.
 -  The "Trash" chapter is moved to the end of the book, if necessary.
 
 
-Lock
-----
-
-**Protect the project while edited outsides**
-
-With **File > Lock** or ``Ctrl``-``L``,
-you can `lock <basic_concepts.html#project-lock>`__ the project.
-
-.. note::
-   All changes must be saved before locking the project.
-
-
-Unlock
-------
-
-**Make the project editable**
-
-With **File > Unlock** or ``Ctrl``-``U``,
-you can unlock the project.
-
-
 Open Project folder
 -------------------
 **Launch the file manager**
@@ -138,44 +112,6 @@ or edit configuration files.
 
 .. hint::
    In case you edit the project "outsides", consider locking it before.
-
-
-Copy style sheet
-----------------
-
-**Provide a css style sheet in the project folder**
-
-With **File > Copy style sheet**,
-you can copy the style sheet *novx.css* into the current project folder.
-This allows you to view the *.novx* project file with a web browser.
-
-.. figure:: _images/file_menu01.jpg
-   :alt: Edge browser screenshot
-
-   Edge browser screenshot
-
-.. hint::
-
-   Depending on your web browser and your operating system, the
-   *content type* resp. *MIME type* of *.novx* files must be registered as
-   *"text/xml"*. Under Windows, you can do this by running the
-   ``<home>\.novx\add_mdnovel.reg`` script.
-
-
-Discard manuscript
-------------------
-
-**Discard the current manuscript by renaming it**
-
-With **File > Discard manuscript**,
-you can add the *.bak* extension to the `current manuscript
-<export_menu#manuscript-for-editing>`__.
-This may help to avoid confusion about changes made with *mdnovel* and
-*Writer*.
-
-.. hint::
-   You can also discard any previously exported document "for editing"
-   via the `Import dialog <import_menu.html>`__. 
 
 
 Save

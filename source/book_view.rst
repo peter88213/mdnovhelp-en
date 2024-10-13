@@ -8,9 +8,6 @@ It is the initial view after opening a *mdnovel* project.
 
 .. |Show Book| image:: _images/viewBook.png
 
-.. figure:: _images/book_view01.png
-   :alt: mdnovel screenshot
-
 
 Title, description, and author
 ------------------------------
@@ -21,61 +18,12 @@ The editing of book title and author can be completed by pressing the ``Enter`` 
 Changes to the description are applied when the mouse is clicked
 anywhere outside the text input field.
 
-After exporting the book to an *ODT* document, title and description
-appear in the document properties.
-
-.. figure:: _images/book_view08.png
-   :alt: Screenshot
-
-   LibreOffice Writer screenshot
-
-These properties are visible, for example, when the mouse pointer is over
-the document in the Windows Explorer.
-
-.. figure:: _images/book_view09.png
-   :alt: Screenshot
-   
-   Windows Explorer Screenshot
-   
-
-
-Document language
------------------
-
-Expand or collapse this frame by clicking on the label.
-
-.. figure:: _images/book_view02.png
-   :alt: mdnovel screenshot
-
-- Language code acc. to ISO 639-1
-- Country code acc. to ISO 3166-2
-
-This information controls the spelling checker for export documents.
-
-.. figure:: _images/book_view10.png
-   :alt: LibreOffice Writer screenshot
-
-   LibreOffice Writer screenshot
-
-If not set, the System locale setting will be used as default.
-
-
-.. hint::
-   You can also set or change the document language with *Writer*, then it will be applied on import. 
-
-	.. figure:: _images/book_view11.png
-	   :alt: LibreOffice Writer screenshot
-	   
-	   LibreOffice Writer screenshot
 
 
 Auto numbering
 --------------
 
 Expand or collapse this frame by clicking on the label.
-
-.. figure:: _images/book_view03.png
-   :alt: mdnovel screenshot
 
 Auto number chapters/parts when refreshing the tree
    If this checkbox is ticked, all chapters/parts are automatically numbered
@@ -110,9 +58,6 @@ Renamings
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/book_view04.png
-   :alt: mdnovel screenshot
-
 *mdnovel* provides some ready-made fields for sections and characters
 to store information that should be at hand when writing.
 If the default categories do not fit into your individual story planning
@@ -146,9 +91,6 @@ Narrative time
 --------------
 
 Expand or collapse this frame by clicking on the label.
-
-.. figure:: _images/book_view05.png
-   :alt: mdnovel screenshot
 
 To get an overview of the course of the narrative time, you can enter
 date/time information `for each section <section_view.html#date-time>`__.
@@ -193,9 +135,6 @@ Writing progress
 ----------------
 
 Expand or collapse this frame by clicking on the label.
-
-.. figure:: _images/book_view06.png
-   :alt: mdnovel screenshot
 
 With *mdnovel*, you can set a word count target and track your
 writing progress.
@@ -247,9 +186,6 @@ Links
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/world_view02.png
-   :alt: Screenshot
-   
 This is a list for image and research document links.
 
 Although *mdnovel* holds some character/location/item data, it is
@@ -328,11 +264,7 @@ A cover thumbnail is displayed with the book properties if you
 provide a PNG image file with the project name along with the *.novx*
 file. The recommended image width is 100 to 200 pixels.
 
-.. figure:: _images/book_view12.png
-   :alt: Windows Explorer Screenshot
-   
-   Windows Explorer Screenshot
-   
+
 .. figure:: _images/book_view07.jpg
    :alt: mdnovel screenshot
 

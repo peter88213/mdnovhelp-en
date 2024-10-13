@@ -103,7 +103,6 @@ contents with their titles as headings.
    `nv_editor <https://github.com/peter88213/nv_editor/>`__.
 -  Section text is color-coded according to the section type (see `Basic
    concepts <basic_concepts.html#part-chapter-section-types>`__).
--  With the **Show markup** checkbox, XML markup can be shown/hidden.
 
 
 Properties
@@ -121,15 +120,6 @@ and metadata of the element selected in the project tree.
 -  You can detach or dock the element properties window with **View >
    Detach/Dock Properties** or ``Ctrl``-``Alt``-``D``.
 -  On closing the detached window, the properties are docked again.
-
-On large screens, you can arrange *mdnovel* and *Writer* with detached
-windows.
-
-.. figure:: _images/full_desktop.png
-   :alt: Writer and mdnovel screen arrangement
-   
-   Example: Arranging LibreOffice (middle) with detached Navigator (upper left), 
-   and mdnovel (lower left) with detached Properties (right) 
 
 
 .. |Go back| image:: _images/goBack.png

@@ -19,16 +19,6 @@ chapters, if needed.
    You can convert chapters into parts and vice versa by simply 
    `changing the level <tree_context_menu.html#change-level>`__.
 
-.. note::
-   A predecessor of *mdnovel* was `novelyst 
-   <https://peter88213.github.io/novelyst/>`__. 
-   There, the parts were on a higher hierarchy level in the project tree 
-   than the chapters, as it corresponds to logical perception. 
-   It was therefore possible to move parts together with their subordinate 
-   chapters, or to mark entire parts as "Unused". In practice, however, 
-   this proved to be cumbersome. I find it easier to move only the part 
-   boundaries and leave the chapter order unchanged when defining parts. 
-
 
 Chapters
 ~~~~~~~~
@@ -138,80 +128,21 @@ quick reference that might come in handy when writing or editing.
 Formatting text
 ---------------
 
-It is assumed that very few types of text markup are needed for a novel
-text. When importing from ODT, *mdnovel* supports the following
-formats:
-
--  *Emphasized* style or italics.
--  *Strongly emphasized* style or bold.
--  *Quotations* (paragraph visually distinguished from body text).
--  *Unordered list item* (indented paragraph with a bullet).
-
-
-Comments, footnotes, endnotes
------------------------------
-
-ODT comments, footnotes, and endnotes are supported by *mdnovel*.
-
-.. tip::
-   *mdnovel* has no support for images in the text body. 
-   You can instead use comments as placeholders. Replace them with your 
-   images (or any other special formatting beyond the capabilities of 
-   *mdnovel*) at the end, when you prepare your `finished novel 
-   <export_menu.html#manuscript-for-printing-export-only>`__ 
-   for publishing. 
-
-
-About document language handling
---------------------------------
-
-ODF documents are generally assigned a language that determines spell
-checking and country-specific character substitutions. In addition,
-Office Writer lets you assign text passages to languages other than the
-document language to mark foreign language usage or to suspend spell
-checking.
-
-Document overall
-   The project language (Language code acc. to ISO 639-1 and country code
-   acc. to ISO 3166-2) can be set in the **Book** settings (right pane)
-   under `Document language <book_view.html#document-language>`__.
-
-Text passages in sections
-   Paragraph-wise or inline text markup for other languages is supported by
-   *mdnovel*.
-
------------------
-
-Project lock
-------------
-
-When exporting a document that can be edited outsides *mdnovel*,
-the project can be automatically locked in order to prevent confusion.
-This behavior depends on the `Export settings <export_menu.html#options>`__.
+Section content is expected to be formatted using Markdown.
+When exporting Markdown documents, *mdnovel* would not re-format the text,
+so you can write in any Markdown dialect you want.
+The section editor provides some menu entries and keyboard shortcuts that
+insert *Common mark* style markup.
 
 .. important::
-   The project can only be locked if all changes are saved. 
-
-In locked state, the project cannot be modified via the user interface.
-The footer bar is then displayed in reversed colors, the menu entries
-for changing data or exporting other documents are greyed out, and
-the widgets in the *Properties* view are disabled.
-
-The project lock state is persistent. This is achieved by automatically
-creating a lock file named ``.LOCK.<project name>.novx#``. If you delete
-this file while *mdnovel* is not running, the project will be unlocked
-upon next start.
-
-Usually, the project is automatically unlocked after re-importing the
-externally edited document.
-
-.. hint::
-   The project lock is nothing more than a strong reminder. You can 
-   `unlock the project <file_menu.html#unlock>`__ at any time at your 
-   own risk. You also can manually `lock the project <file_menu.html#lock>`__,
-   if necessary. The |Lock/Unlock| toolbar button toggles the locking state.
+   Some character sequences are reserved for the *mdnov* file format, so they
+   must not be used in your text. 
+   
+   These are: 
+   - `@@` (element marker)
+   - `%%` (property marker) 
+   - `---` (horizontal ruler of any length used as delimiter for YAML-encoded areas) 
+   
 
 
-.. |Lock/Unlock| image:: _images/lock.png
-
-
+ 

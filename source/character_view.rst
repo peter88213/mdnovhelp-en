@@ -5,9 +5,6 @@ The Character properties view opens in the right pane when you
 select a character in the tree.
 
 
-.. figure:: _images/character_view01.png
-   :alt: Screenshot
-
 Title and description
 ---------------------
 
@@ -47,9 +44,6 @@ Bio
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/character_view02.png
-   :alt: Screenshot
-
 Birth/death date
    Format: *YYYY-MM-DD*, according to ISO 8601.
 
@@ -62,9 +56,6 @@ Goals
 -----
 
 Expand or collapse this frame by clicking on the label.
-
-.. figure:: _images/character_view03.png
-   :alt: Screenshot
 
 Changes to the goals are applied when the mouse is clicked anywhere outside
 the text input field.
@@ -80,9 +71,6 @@ Links
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/character_view04.png
-   :alt: Screenshot
-   
 This is a list for image and research document links.
 
 Although *mdnovel* holds some character/location/item data, it is
