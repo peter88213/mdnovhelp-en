@@ -3,12 +3,6 @@ Tools menu
 
 **Miscellaneous functions**
 
-.. figure:: _images/tools_menu02.png
-   :alt: mdnovel screenshot
-
-.. note:: 
-   The *Tools* menu can be extended by plugins to add more
-   features.
 
 Plugin manager
 --------------
@@ -17,9 +11,6 @@ Plugin manager
 
 With **Tools > Plugin manager**,
 you can open the *Installed plugins* dialog.
-
-.. figure:: _images/tools_menu01.png
-   :alt: mdnovel screenshot
 
 -  Successfully installed plugins are displayed black on white by
    default.
@@ -64,7 +55,6 @@ How to uninstall a plugin
 
 
 
-
 Open installation folder
 ------------------------
 
@@ -74,4 +64,29 @@ With **Tools > Open installation folder**,
 you can launch the file manager with the *mdnovel* installation folder.
 This might come in handy if you wish to edit configuration files,
 or install your own plugins.
+
+
+-----------------
+
+Matrix
+------
+
+**Open the matrix view**
+
+With **Tools > Matrix**,
+you can open a pop-up window containing the `matrix view <matrix.html>`__
+with a table-like representation of section relationships.
+
+
+Daily progress log
+------------------
+
+**Display a list of daily word count log entries**
+
+With **Tools > Daily progress log** you can open the progress log viewer
+in a pop-up window.
+If the window is already open, this command will update
+the actual word count.
+
+
 

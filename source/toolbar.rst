@@ -49,6 +49,10 @@ Same as ``Del``.
 
 -----------------
 
+|Matrix| Start the `matrix view <matrix.html>`__.
+
+-----------------
+
 |Toggle Text viewer| Toggle Text viewer.
 Same as **View > Toggle Text viewer** or ``Ctrl``-``T``.
 
@@ -69,5 +73,6 @@ Same as **View > Toggle Properties** or ``Ctrl``-``Alt``-``T``.
 .. |Add child| image:: _images/addChild.png
 .. |Add parent| image:: _images/addParent.png
 .. |Delete| image:: _images/remove.png
+.. |Matrix| image:: _images/matrix.png
 .. |Toggle Text viewer| image:: _images/viewer.png
 .. |Toggle Properties| image:: _images/properties.png

@@ -86,12 +86,12 @@ that can be edited and reimported.
 File name suffix is ``_sections``.
 
 
-Section list
-------------
+Export section list
+-------------------
 
 **Export a CSV document**
 
-With **Section > Section list**,
+With **Section > Export section list**,
 you can create a CSV file with a row per section, containing
 the following data:
 

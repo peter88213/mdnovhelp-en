@@ -1,6 +1,11 @@
 The matrix view
 ===============
 
+This is a pop-up window that displays
+section relationships to plot lines, characters, locations, and items
+with a spreadsheet-like matrix.
+You can add or remove relationships by ``Ctrl``-klicking on the nodes.
+
 
 Start the matrix manager
 ------------------------
@@ -8,6 +13,7 @@ Start the matrix manager
 - Open the matrix manager either from the main menu: **Tools > Matrix**,
 - or via the |Matrix| button in the toolbar.
 
+.. |Matrix| image:: _images/matrix.png
 
 Add/remove relationships
 ------------------------

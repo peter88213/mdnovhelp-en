@@ -31,13 +31,32 @@ Create from Markdown...
       *.mdnov*.
    -  If a project with the same file name as the Markdown document already
       exists in the directory, no new project will be created.
-   -  If you select a previously exported document belonging to an existing
-      project, this project will be updated and loaded.
    -  The Markdown document can either be a `Work-in-progress
       <getting_started.html#starting-with-a-work-in-progress>`__,
       i.e. a regular novel manuscript with chapter headings and section contents,
-      r an `outline <getting_started.html#starting-with-an-outline>`__
+      or an `outline <getting_started.html#starting-with-an-outline>`__
       containing the chapter and section structure with titles and descriptions.
+
+
+Create from yw7...
+   -  This will close the current project and open a file dialog asking
+      for a `yWriter <https://spacejock.com/yWriter7.html>`__ project file
+      to create the new project from.
+   -  The newly created project is saved automatically in the same
+      directory as the *.yw7* file, using its file name and the extension
+      *.mdnov*.
+   -  If a project with the same file name as the *.yw7* file already
+      exists in the directory, no new project will be created.
+
+Create from novx...
+   -  This will close the current project and open a file dialog asking
+      for a `novelibre <https://github.com/peter88213/novelibre>`__ project file
+      to create the new project from.
+   -  The newly created project is saved automatically in the same
+      directory as the *.novx* file, using its file name and the extension
+      *.mdnov*.
+   -  If a project with the same file name as the *.novx* file already
+      exists in the directory, no new project will be created.
 
 
 Open...
@@ -85,6 +104,7 @@ You will get a warning, because changes may be lost.
    in the project directory.
    A new backup copy is created when saving the project.
 
+-----------------
 
 Refresh tree
 ------------
@@ -100,6 +120,7 @@ you can refresh the tree.
    settings <book_view.html#auto-numbering>`__.
 -  The "Trash" chapter is moved to the end of the book, if necessary.
 
+-----------------
 
 Open Project folder
 -------------------
@@ -113,6 +134,7 @@ or edit configuration files.
 .. hint::
    In case you edit the project "outsides", consider locking it before.
 
+-----------------
 
 Save
 ----
