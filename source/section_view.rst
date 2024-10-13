@@ -5,9 +5,6 @@ The Section properties view opens in the right pane when you
 select a section in the tree.
 
 
-.. figure:: _images/section_view01.png
-   :alt: Screenshot
-
 Title and description
 ---------------------
 
@@ -56,8 +53,6 @@ Plot
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/section_view04.png
-   :alt: Screenshot
 
 Plot lines
 ~~~~~~~~~~
@@ -68,13 +63,8 @@ assigned to the section.
 
 .. tip::
    A more convenient way to manage and keep track of plot line assignments is 
-   offered by the `nv_matrix plugin 
-   <https://github.com/peter88213/nv_matrix/>`__. 
+   offered by the `matrix view <matrix.html>`__. 
    
-   You can also assign a section to a plot line by entering text
-   in the corresponding *Plot line notes* cell of the 
-   `plot grid <plotting.html#plot-grid>`__. 
-
 Add plot line assignment
    When clicking on |Add|, the "Pick mode"
    is activated, and the cursor changes to a "plus" shape. By clicking
@@ -120,16 +110,6 @@ Scene
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/section_view03.png
-   :alt: Screenshot
-
-   Example of an "action scene"
-
-.. figure:: _images/section_view08.png
-   :alt: Screenshot
-
-   Example of a "reaction scene" or "sequel"
-
 There is a popular theory for "selling writers" that suggests novels
 are best divided into scenes, alternating between "action scenes" and
 "reaction scenes", or "scenes" and "sequels". If you want to implement
@@ -140,11 +120,6 @@ to set up a dramaturgical scene micro-structure, you can set the section
 to **Other**, and get three `freely named <book_view.html#renamings>`_
 text fields.
 
-.. figure:: _images/section_view06.png
-   :alt: Screenshot
-   
-   Example of a non-standard scene category
-
 On the other hand, not every section is a scene to which the categories
 mentioned above apply. Sections can be characterized by mode of discourse
 (e.g. Narration, Dramatic action, Dialogue, Description, Exposition).
@@ -152,20 +127,11 @@ So if a section is not staged, you can set the section to **Not a scene**,
 and get three `freely named <book_view.html#renamings>`_
 text fields.
 
-.. figure:: _images/section_view07.png
-   :alt: Screenshot
-   
-   Example of a non-staged section category
-
-
 
 Relationships
 -------------
 
 Expand or collapse this frame by clicking on the label.
-
-.. figure:: _images/section_view02.png
-   :alt: Screenshot
 
 If you want to associate characters, locations, and items with the
 section, you can do it here by adding the element to a list of
@@ -198,9 +164,8 @@ View the related element
       You can go back to the initially selected section with |Go Back|. 
 
 .. hint::
-   A convenient way to manage and keep track of relationships is offered 
-   by the `nv_matrix plugin 
-   <https://github.com/peter88213/nv_matrix/>`__. 
+   A convenient way to manage and keep track of relationships is
+   offered by the `matrix view <matrix.html>`__. 
 
 
 .. |Add| image:: _images/add.png
@@ -218,12 +183,8 @@ Editing can be completed by pressing the ``Enter`` key.
 .. hint::
    Dedicated timeline software offers a more convenient way of entering date/time 
    and duration information. So if chronology is important to your story, you
-   might want to take a look at the `Timeline plugin 
-   <https://github.com/peter88213/nv_timeline/>`__, or the 
-   `Aeon Timeline 2 plugin <https://github.com/peter88213/nv_aeon2/>`__.
+   might want to take a look at `Timeline <http://thetimelineproj.sourceforge.net/>`__.
 
-.. figure:: _images/section_view05.png
-   :alt: Screenshot
 
 Start
 ~~~~~
@@ -245,9 +206,6 @@ Day
 
 Moon phase
    If the required date information is set, you can call up the corresponding moon phase.
-
-   .. figure:: _images/section_view09.png
-      :alt: Screenshot
 
    The moon phase information consists of:
 
@@ -306,9 +264,6 @@ Links
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/world_view02.png
-   :alt: Screenshot
-   
 This is a list for image and research document links.
 
 Although *mdnovel* holds some character/location/item data, it is
@@ -355,7 +310,7 @@ Open Link
       If you want to open certain linked files with another application than the 
       standard application, you can provide a *mdnovel* "launcher" setting. 
       For this, just create a text file named **launchers.ini** in the 
-      ``.novx/config``  directory (where all configuration files are stored).
+      ``.mdnovel/config``  directory (where all configuration files are stored).
       Here you can assign applications to the file extensions.
       
       Zim desktop wiki pages are a special case. 

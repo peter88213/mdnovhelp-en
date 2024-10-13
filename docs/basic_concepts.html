@@ -51,7 +51,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Basic concepts</a><ul>
@@ -65,18 +64,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#section-completion-status">Section completion status</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#characters-and-story-world">Characters and story world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#formatting-text">Formatting text</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#comments-footnotes-endnotes">Comments, footnotes, endnotes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#about-document-language-handling">About document language handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#project-lock">Project lock</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="command_reference.html">Command reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
 </ul>
 
@@ -119,16 +113,6 @@ chapters, if needed.</p>
 <p class="admonition-title">Hint</p>
 <p>You can convert chapters into parts and vice versa by simply
 <a class="reference external" href="tree_context_menu.html#change-level">changing the level</a>.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>A predecessor of <em>mdnovel</em> was <a class="reference external" href="https://peter88213.github.io/novelyst/">novelyst</a>.
-There, the parts were on a higher hierarchy level in the project tree
-than the chapters, as it corresponds to logical perception.
-It was therefore possible to move parts together with their subordinate
-chapters, or to mark entire parts as “Unused”. In practice, however,
-this proved to be cumbersome. I find it easier to move only the part
-boundaries and leave the chapter order unchanged when defining parts.</p>
 </div>
 </section>
 <section id="chapters">
@@ -224,71 +208,19 @@ the characters that come into question.</p>
 <hr class="docutils" />
 <section id="formatting-text">
 <h2>Formatting text<a class="headerlink" href="#formatting-text" title="Link to this heading"></a></h2>
-<p>It is assumed that very few types of text markup are needed for a novel
-text. When importing from ODT, <em>mdnovel</em> supports the following
-formats:</p>
-<ul class="simple">
-<li><p><em>Emphasized</em> style or italics.</p></li>
-<li><p><em>Strongly emphasized</em> style or bold.</p></li>
-<li><p><em>Quotations</em> (paragraph visually distinguished from body text).</p></li>
-<li><p><em>Unordered list item</em> (indented paragraph with a bullet).</p></li>
-</ul>
-</section>
-<section id="comments-footnotes-endnotes">
-<h2>Comments, footnotes, endnotes<a class="headerlink" href="#comments-footnotes-endnotes" title="Link to this heading"></a></h2>
-<p>ODT comments, footnotes, and endnotes are supported by <em>mdnovel</em>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><em>mdnovel</em> has no support for images in the text body.
-You can instead use comments as placeholders. Replace them with your
-images (or any other special formatting beyond the capabilities of
-<em>mdnovel</em>) at the end, when you prepare your <a class="reference external" href="export_menu.html#manuscript-for-printing-export-only">finished novel</a>
-for publishing.</p>
-</div>
-</section>
-<section id="about-document-language-handling">
-<h2>About document language handling<a class="headerlink" href="#about-document-language-handling" title="Link to this heading"></a></h2>
-<p>ODF documents are generally assigned a language that determines spell
-checking and country-specific character substitutions. In addition,
-Office Writer lets you assign text passages to languages other than the
-document language to mark foreign language usage or to suspend spell
-checking.</p>
-<dl class="simple">
-<dt>Document overall</dt><dd><p>The project language (Language code acc. to ISO 639-1 and country code
-acc. to ISO 3166-2) can be set in the <strong>Book</strong> settings (right pane)
-under <a class="reference external" href="book_view.html#document-language">Document language</a>.</p>
-</dd>
-<dt>Text passages in sections</dt><dd><p>Paragraph-wise or inline text markup for other languages is supported by
-<em>mdnovel</em>.</p>
-</dd>
-</dl>
-</section>
-<hr class="docutils" />
-<section id="project-lock">
-<h2>Project lock<a class="headerlink" href="#project-lock" title="Link to this heading"></a></h2>
-<p>When exporting a document that can be edited outsides <em>mdnovel</em>,
-the project can be automatically locked in order to prevent confusion.
-This behavior depends on the <a class="reference external" href="export_menu.html#options">Export settings</a>.</p>
+<p>Section content is expected to be formatted using Markdown.
+When exporting Markdown documents, <em>mdnovel</em> would not re-format the text,
+so you can write in any Markdown dialect you want.
+The section editor provides some menu entries and keyboard shortcuts that
+insert <em>Common mark</em> style markup.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The project can only be locked if all changes are saved.</p>
-</div>
-<p>In locked state, the project cannot be modified via the user interface.
-The footer bar is then displayed in reversed colors, the menu entries
-for changing data or exporting other documents are greyed out, and
-the widgets in the <em>Properties</em> view are disabled.</p>
-<p>The project lock state is persistent. This is achieved by automatically
-creating a lock file named <code class="docutils literal notranslate"><span class="pre">.LOCK.&lt;project</span> <span class="pre">name&gt;.novx#</span></code>. If you delete
-this file while <em>mdnovel</em> is not running, the project will be unlocked
-upon next start.</p>
-<p>Usually, the project is automatically unlocked after re-importing the
-externally edited document.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>The project lock is nothing more than a strong reminder. You can
-<a class="reference external" href="file_menu.html#unlock">unlock the project</a> at any time at your
-own risk. You also can manually <a class="reference external" href="file_menu.html#lock">lock the project</a>,
-if necessary. The <img alt="Lock/Unlock" src="_images/lock.png" /> toolbar button toggles the locking state.</p>
+<p>Some character sequences are reserved for the <em>mdnov</em> file format, so they
+must not be used in your text.</p>
+<p>These are:
+- <cite>&#64;&#64;</cite> (element marker)
+- <cite>%%</cite> (property marker)
+- <cite>—</cite> (horizontal ruler of any length used as delimiter for YAML-encoded areas)</p>
 </div>
 </section>
 </section>

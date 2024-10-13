@@ -11,9 +11,6 @@ menu opens that belongs to the type of the selected element.
 Book context menu entries
 -------------------------
 
-.. figure:: _images/context_menu01.png
-   :alt: mdnovel screenshot
-
 Add Section
 ~~~~~~~~~~~
 
@@ -169,9 +166,6 @@ Hides all tree elements except the main categories.
 Characters/Locations/Items context menu entries
 -----------------------------------------------
 
-.. figure:: _images/context_menu02.png
-   :alt: mdnovel screenshot
-
 Add
 ~~~
 
@@ -181,21 +175,6 @@ Adds a new character/location/item.
 -  The new element has an auto-generated title. You can change it in the
    right pane.
 -  The status of newly created characters is *minor*.
-
-Export manuscript filtered by viewpoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Exports a `manuscript <export_menu.html#manuscript-for-editing>`__
-with the sections that have the selected character as viewpoint.
-
-
-Export synopsis filtered by viewpoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Exports the `descriptions of the sections
-<section_menu.html#export-section-descriptions-for-editing>`__
-that have the selected character
-as viewpoint.
 
 
 Delete
@@ -223,9 +202,6 @@ Major characters are highlighted in the tree view.
 Plot lines context menu entries
 -------------------------------
 
-.. figure:: _images/context_menu03.png
-   :alt: mdnovel screenshot
-
 Add Plot line
 ~~~~~~~~~~~~~
 
@@ -247,19 +223,6 @@ Adds a new Plot point
 - Otherwise, no new plot point is generated.
 - The new plot point has an auto-generated title. You can change it in
   the right pane.
-
-Export manuscript filtered by plot line
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Exports a `manuscript <export_menu.html#manuscript-for-editing>`__
-with the sections that belong to the selected plot line.
-
-Export synopsis filtered by plot line
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Exports the `descriptions of the sections
-<section_menu.html#export-section-descriptions-for-editing>`__
-that belong to the selected plot line.
 
 
 Delete

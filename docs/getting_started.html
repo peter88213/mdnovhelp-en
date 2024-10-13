@@ -23,7 +23,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Writing the manuscript" href="writing.html" />
+    <link rel="next" title="The section editor" href="editor.html" />
     <link rel="prev" title="Basic concepts" href="basic_concepts.html" /> 
 </head>
 
@@ -51,7 +51,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
@@ -60,19 +59,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#starting-the-manuscript-immediately">Starting the manuscript immediately</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#creating-a-chapter-structure">Creating a chapter structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#creating-a-dramatic-structure">Creating a dramatic structure</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#creating-a-plot-grid">Creating a plot grid</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#starting-with-a-work-in-progress">Starting with a Work-in-progress</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#starting-with-an-outline">Starting with an outline</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="command_reference.html">Command reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
 </ul>
 
@@ -103,7 +99,7 @@
 <h1>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
 <section id="starting-from-zero">
 <h2>Starting from zero<a class="headerlink" href="#starting-from-zero" title="Link to this heading"></a></h2>
-<p>If you start <em>mdnovel</em> by dragging a <em>.novx</em> file onto the icon,
+<p>If you start <em>mdnovel</em> by dragging a <em>.mdnov</em> file onto the icon,
 that project will be opened. Otherwise, the project from the last
 session will be automatically reopened, if there is one.</p>
 <p>Let’s assume that neither is the case, for example when the program
@@ -111,9 +107,6 @@ is called up for the very first time after installation.
 Let’s also assume that we have not yet made any preparations, i.e.
 we have neither a Work-in-progress nor an outline of any kind. First
 of all, we create a new empty project with <strong>File &gt; New &gt; Empty project</strong>.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started01.png" />
-</figure>
 <p>A file selection dialog opens and asks for the file name and location
 of the new project.</p>
 <div class="admonition tip">
@@ -126,21 +119,12 @@ files for tools and plugins.</p>
 <p>It is not mandatory, but we should then enter a title and the author’s
 name. Perhaps also a description of our idea. To get started right away,
 we will postpone the remaining project settings until later.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started02.png" />
-</figure>
 <p>We need at least one section in order to get space to begin writing.
 And this must belong to a chapter. So we now create the first
 chapter with <strong>Chapter &gt; Add</strong>.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started03.png" />
-</figure>
 <p>After the chapter is created, <em>mdnovel</em> sets the focus on the chapter
 title entry at the top of the right pane. Let’s overwrite the default
 title.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started04.png" />
-</figure>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>If you decide to have <em>mdnovel</em> <a class="reference external" href="book_view.html#auto-numbering">auto-number the chapters</a>, you can skip this and keep the
@@ -148,48 +132,23 @@ default chapter title.</p>
 </div>
 <p>There are several ways to add a section now. In this example, we
 right-click on the chapter, and select <strong>Add section</strong>.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started05.png" />
-</figure>
 <section id="starting-the-manuscript-immediately">
 <h3>Starting the manuscript immediately<a class="headerlink" href="#starting-the-manuscript-immediately" title="Link to this heading"></a></h3>
-<p>As soon as the new section appears in the tree view, we can export a
-manuscript. Just click on the <img alt="Export manuscript" src="_images/manuscript.png" /> toolbar icon.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started06.png" />
-</figure>
-<p>Done! <em>Writer</em> should now appear with the manuscript open.
-Just start writing your novel within the text boundary.</p>
-<figure class="align-default">
-<img alt="Libreoffice screenshot" src="_images/getting_started07.png" />
-</figure>
-<p>We can now continue working with <em>Writer</em> <a class="reference external" href="writing.html">as described on the next
-page</a>, creating new sections and chapters as we write.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can now work on the manuscript document “on the seat of your pants”
-until it makes sense for  you to transfer the whole thing back to
-<em>mdnovel</em> in order to create an overview and set up your project
-organization there.</p>
-<p>However, I recommend doing this at least daily at the end of your writing
-session and exporting a new manuscript document the next day.
-Then you won’t get behind with entering the section titles and content
-descriptions, and you will get your chapters numbered, if desired.
-In addition, <em>mdnovel</em> then saves entries in the daily word count log.</p>
-</div>
+<p>As soon as the new section appears in the tree view, we can open it
+with the <a class="reference external" href="editor.html">section editor</a>.</p>
 </section>
 <section id="creating-a-chapter-structure">
 <h3>Creating a chapter structure<a class="headerlink" href="#creating-a-chapter-structure" title="Link to this heading"></a></h3>
 <p>If you prefer to make a plan first before you start writing, <em>mdnovel</em> is
 the right tool for you.
-Then you don’t start <em>Writer</em> with an empty manuscript, but first create
-a framework of empty chapters for which you enter content information.
+Then you first create a framework of empty chapters for which you enter content
+information.
 Or you can leave it at one chapter for the time being and create empty sections
 in it, which you can later distribute to chapters.
 The results of this preliminary work can be exported as text documents in the
 form of synopses, e.g on
-<a class="reference external" href="chapter_menu.html#export-chapter-descriptions-for-editing">chapter</a> or
-<a class="reference external" href="section_menu.html#export-section-descriptions-for-editing">section</a> level.</p>
+<a class="reference external" href="chapter_menu.html#export-chapter-descriptions">chapter</a> or
+<a class="reference external" href="section_menu.html#export-section-descriptions">section</a> level.</p>
 </section>
 <section id="creating-a-dramatic-structure">
 <h3>Creating a dramatic structure<a class="headerlink" href="#creating-a-dramatic-structure" title="Link to this heading"></a></h3>
@@ -197,54 +156,22 @@ form of synopses, e.g on
 describe stages like acts or steps in order to later insert the sections as
 scenes.
 For this, you first create at least one chapter. Then create your stages.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started08.png" />
-</figure>
 <p>The system is described on the <a class="reference external" href="plotting.html">Plotting with mdnovel</a>
 page.
 There you also can learn how to set up multiple strands or character arcs.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>With the <a class="reference external" href="https://github.com/peter88213/nv_templates/">nv_templates plugin</a> you can have
-<em>mdnovel</em> set up your new project with a pre-made structure like the
-“Three Act Model” or “Save The Cat”.</p>
-</div>
-</section>
-<section id="creating-a-plot-grid">
-<h3>Creating a plot grid<a class="headerlink" href="#creating-a-plot-grid" title="Link to this heading"></a></h3>
-<p>If you want to outline your novel using a <a class="reference external" href="plotting.html#plot-grid">plot grid</a>, you can do this with
-<em>mdnovel</em>:</p>
-<ol class="arabic simple">
-<li><p>Create an empty new project as described above.</p></li>
-<li><p>Add a single chapter.</p></li>
-<li><p>Select this chapter, then <a class="reference external" href="section_menu.html#add-multiple-sections">add multiple sections</a>.</p></li>
-<li><p>If you need a number of new sections above the limit,
-repeat step 3.
-However, it is recommended to start with a few sections
-that are easier to distribute to the chapters to be created later.
-You can extend the plot grid over time.</p></li>
-<li><p>Create the <a class="reference external" href="plot_menu.html#add-plot-line">plot lines</a> you need.</p></li>
-<li><p><a class="reference external" href="plot_menu.html#export-plot-grid-for-editing">Export a plot grid</a>
-and fill the table cells.</p></li>
-<li><p><a class="reference external" href="import_menu.html">Import</a> the plot grid.</p></li>
-<li><p><a class="reference external" href="chapter_menu.html#add">Add more chapters</a> and
-<a class="reference external" href="desktop.html#move-tree-elements">move the sections</a>
-to them.</p></li>
-</ol>
 </section>
 </section>
 <hr class="docutils" />
 <section id="starting-with-a-work-in-progress">
 <h2>Starting with a Work-in-progress<a class="headerlink" href="#starting-with-a-work-in-progress" title="Link to this heading"></a></h2>
 <p>Let’s assume that you have already written an extensive novel manuscript with
-<em>Writer</em> and now want to continue with <em>mdnovel</em>.
+any text editor and now want to continue with <em>mdnovel</em>.
 In this case you first make sure to set it up in a way, <em>mdnovel</em> can
 recognize its parts, chapters, and sections.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <dl>
-<dt>How to set up a Work-in-progress for import</dt><dd><blockquote>
-<div><p>A Work-in-progress must not have any third level heading.</p>
+<dt>How to set up a Work-in-progress for import</dt><dd><p>A Work-in-progress must not have any third level heading.</p>
 <ul class="simple">
 <li><p><em>Heading 1</em> → Part title.</p></li>
 <li><p><em>Heading 2</em> → Chapter title.</p></li>
@@ -252,59 +179,25 @@ recognize its parts, chapters, and sections.</p>
 chapter).</p></li>
 <li><p>All other text is considered section content.</p></li>
 </ul>
-</div></blockquote>
-<figure class="align-default" id="id1">
-<img alt="Libreoffice Writer screenshot" src="_images/getting_started10.png" />
-<figcaption>
-<p><span class="caption-text">Work-in-progress example: Note the blanks between the asterisks of
-the section divider. It is not necessary to center the section dividers.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p>All headings must be ATX style (prefixed with hashtags).</p>
 </dd>
 </dl>
 </div>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>Formatting that is not <a class="reference external" href="basic_concepts.html#formatting-text">supported with mdnovel</a> is lost.
-The same applies to images.
-So if your work depends on a sophisticated layout that is beyond
-<em>mdnovel’s</em> capabilities, consider using comments as reminders
-as you write. That will help you doing the special formatting at
-the end, when you prepare the finished novel for publication.
-If this is not enough, <em>mdnovel</em> may not be  the right tool for you.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The easiest way to create the right section dividers is by using a macro
-that comes with the
-<a class="reference external" href="https://github.com/peter88213/mdnovel-tools/">mdnovel-tools</a>
-extension.</p>
-</div>
 <p>When your manuscript is ready, create your new project
-with <strong>File &gt; New &gt; Create from ODT…</strong>.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started09.png" />
-</figure>
-<p>A file selection dialog opens and asks for the <em>ODT</em> document. The new project
+with <strong>File &gt; New &gt; Create from Markdown…</strong>.</p>
+<p>A file selection dialog opens and asks for the <em>Markdown</em> document. The new project
 will be created in the same directory and named after the manuscript file, but
-with the <em>.novx</em> extension.</p>
+with the <em>.mdnov</em> extension.</p>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>Once your novel is imported into <em>mdnovel</em>, your initial <em>ODT</em> document is no
+<p>Once your novel is imported into <em>mdnovel</em>, your initial <em>Markdown</em> document is no
 longer needed. So if you want to keep it, you best move it elsewhere, so that
-it is not overwritten by an <a class="reference external" href="export_menu.html#manuscript-for-printing-export-only">exported document</a> later on.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>After importing an extensive piece of work, you may have a whole lot
-of sections that need to be named and described.
-A <a class="reference external" href="plotting.html#plot-grid">plot grid</a> might be a great help for
-doing this.</p>
+it is not overwritten by an <a class="reference external" href="export_menu.html#manuscript">exported document</a> later on.</p>
 </div>
 </section>
 <section id="starting-with-an-outline">
 <h2>Starting with an outline<a class="headerlink" href="#starting-with-an-outline" title="Link to this heading"></a></h2>
-<p>Instead of a Work-in-progress, you also can import an outline made with <em>Writer</em>
+<p>Instead of a Work-in-progress, you also can import an outline made with any text editor
 into <em>mdnovel</em> to get a novel project with empty, but named and described
 chapters and sections.
 At first glance, an outline looks the same as a Work-in-progress, but it has
@@ -314,39 +207,27 @@ In this case, formatting doesn’t matter.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <dl>
-<dt>How to set up an outline for import</dt><dd><blockquote>
-<div><p>An outline has at least one third level heading.</p>
+<dt>How to set up an outline for import</dt><dd><p>An outline has at least one third level heading.</p>
 <ul class="simple">
 <li><p><em>Heading 1</em> → Part title.</p></li>
 <li><p><em>Heading 2</em> → Chapter title.</p></li>
 <li><p><em>Heading 3</em> → Section title.</p></li>
 <li><p>All other text is considered to be chapter/section description.</p></li>
 </ul>
-</div></blockquote>
-<figure class="align-default" id="id2">
-<img alt="Libreoffice Writer screenshot" src="_images/getting_started11.png" />
-<figcaption>
-<p><span class="caption-text">Outline example: The body text just below the chapter heading is the chapter
-description; the body text just below the section heading is the section description.
-However, the descriptions are optional.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<p>All headings must be ATX style (prefixed with hashtags).</p>
 </dd>
 </dl>
 </div>
 <p>When your outline is ready, create your new project
-with <strong>File &gt; New &gt; Create from ODT…</strong>.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/getting_started09.png" />
-</figure>
-<p>A file selection dialog opens and asks for the <em>ODT</em> document. The new project
+with <strong>File &gt; New &gt; Create from Markdown…</strong>.</p>
+<p>A file selection dialog opens and asks for the <em>Markdown</em> document. The new project
 will be created in the same directory and named after the outline file, but
-with the <em>.novx</em> extension.</p>
+with the <em>.mdnov</em> extension.</p>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>Once your outline is imported into <em>mdnovel</em>, your initial <em>ODT</em> document is no
+<p>Once your outline is imported into <em>mdnovel</em>, your initial <em>Markdown</em> document is no
 longer needed. So if you want to keep it, you best move it elsewhere, so that
-it is not overwritten by an <a class="reference external" href="export_menu.html#manuscript-for-printing-export-only">exported document</a> later on.</p>
+it is not overwritten by an <a class="reference external" href="export_menu.html#manuscript">exported document</a> later on.</p>
 <p>You can export and import the current outline at any time as “Descriptions”
 separated by parts, chapters and sections.</p>
 </div>
@@ -358,7 +239,7 @@ separated by parts, chapters and sections.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="basic_concepts.html" class="btn btn-neutral float-left" title="Basic concepts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="writing.html" class="btn btn-neutral float-right" title="Writing the manuscript" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="editor.html" class="btn btn-neutral float-right" title="The section editor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

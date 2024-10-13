@@ -3,9 +3,6 @@ Project notes menu
 
 **Project notes operation**
 
-.. figure:: _images/project_notes_menu01.png
-   :alt: mdnovel screenshot
-
 Add
 ---
 

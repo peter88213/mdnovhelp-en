@@ -51,12 +51,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="command_reference.html">Command reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="file_menu.html">File menu</a></li>
@@ -68,8 +67,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#add-multiple-sections">Add multiple sections</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#set-type">Set Type</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#set-status">Set Status</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-section-descriptions-for-editing">Export section descriptions for editing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#section-list-export-only">Section list (export only)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-section-descriptions">Export section descriptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-list">Section list</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="characters_menu.html">Characters menu</a></li>
@@ -78,7 +77,6 @@
 <li class="toctree-l2"><a class="reference internal" href="plot_menu.html">Plot menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="project_notes_menu.html">Project notes menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="export_menu.html">Export menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import_menu.html">Import menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tools_menu.html">Tools menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help_menu.html">Help menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tree_context_menu.html">Tree view context menu</a></li>
@@ -86,8 +84,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
 </ul>
 
@@ -118,9 +114,6 @@
   <section id="section-menu">
 <h1>Section menu<a class="headerlink" href="#section-menu" title="Link to this heading"></a></h1>
 <p><strong>Section operation</strong></p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/section_menu01.png" />
-</figure>
 <section id="add">
 <h2>Add<a class="headerlink" href="#add" title="Link to this heading"></a></h2>
 <p><strong>Add a new section</strong></p>
@@ -149,9 +142,6 @@ the right pane.</p></li>
 <p><strong>Add new sections in bulk</strong></p>
 <p>With <strong>Section &gt; Add multiple sections</strong>,
 you can add up to 20 sections to the tree.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/section_menu04.png" />
-</figure>
 <ul class="simple">
 <li><p>You will be prompted to enter the number of new sections.</p></li>
 <li><p>The number of sections to be added at once is limited to 20.</p></li>
@@ -166,9 +156,6 @@ possible.</p></li>
 <p>With <strong>Section &gt; Set Type</strong>,
 you can set the <a class="reference external" href="basic_concepts.html#part-chapter-section-types">type</a>
 of the selected section to <em>Normal</em> or <em>Unused</em> .</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/section_menu02.png" />
-</figure>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <dl class="simple">
@@ -183,9 +170,6 @@ of the selected section to <em>Normal</em> or <em>Unused</em> .</p>
 <section id="set-status">
 <h2>Set Status<a class="headerlink" href="#set-status" title="Link to this heading"></a></h2>
 <p><strong>Set the section completion status</strong></p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/section_menu03.png" />
-</figure>
 <p>With <strong>Section &gt; Set Status</strong>,
 you can set the <a class="reference external" href="basic_concepts.html#section-completion-status">completion status</a>
 of the selected section to <em>Outline</em>, <em>Draft</em>, <em>1st Edit</em>, <em>2nd Edit</em>,
@@ -201,20 +185,20 @@ or <em>Done</em>.</p>
 </dl>
 </div>
 </section>
-<section id="export-section-descriptions-for-editing">
-<h2>Export section descriptions for editing<a class="headerlink" href="#export-section-descriptions-for-editing" title="Link to this heading"></a></h2>
-<p><strong>Export an ODT document that can be imported again after editing</strong></p>
-<p>With <strong>Section &gt; Export section descriptions for editing</strong>,
+<section id="export-section-descriptions">
+<h2>Export section descriptions<a class="headerlink" href="#export-section-descriptions" title="Link to this heading"></a></h2>
+<p><strong>Export a Markdown-formatted document</strong></p>
+<p>With <strong>Section &gt; Export section descriptions</strong>,
 you can create a text document with a <strong>full synopsis</strong> containing
 part/chapter headings and section descriptions
 that can be edited and reimported.
-File name suffix is <code class="docutils literal notranslate"><span class="pre">_sections_tmp</span></code>.</p>
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_sections</span></code>.</p>
 </section>
-<section id="section-list-export-only">
-<h2>Section list (export only)<a class="headerlink" href="#section-list-export-only" title="Link to this heading"></a></h2>
-<p><strong>Export an ODS document</strong></p>
-<p>With <strong>Section &gt; Section list (export only)</strong>,
-you can create a spreadsheet with a row per section, containing
+<section id="section-list">
+<h2>Section list<a class="headerlink" href="#section-list" title="Link to this heading"></a></h2>
+<p><strong>Export a CSV document</strong></p>
+<p>With <strong>Section &gt; Section list</strong>,
+you can create a CSV file with a row per section, containing
 the following data:</p>
 <ul class="simple">
 <li><p>Section ID (hidden)</p></li>

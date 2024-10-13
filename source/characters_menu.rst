@@ -40,7 +40,7 @@ Export character descriptions
 
 **Export a Markdown-formatted document**
 
-With **Characters > Export character descriptions for editing**,
+With **Characters > Export character descriptions**,
 you can create a text document that contains
 character descriptions, bio, goals, and notes that can be edited in
 Office Writer and reimported.
@@ -54,7 +54,7 @@ Export character list
 
 With **Characters > Export character list**,
 you can create a CSV file that contains
-a character list that can be edited with a spereadsheet application.
+a character list that can be imported into any spreadsheet application.
 File name suffix is ``_charlist``.
 
 

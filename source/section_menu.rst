@@ -3,9 +3,6 @@ Section menu
 
 **Section operation**
 
-.. figure:: _images/section_menu01.png
-   :alt: mdnovel screenshot
-
 Add
 ---
 
@@ -36,9 +33,6 @@ Add multiple sections
 With **Section > Add multiple sections**,
 you can add up to 20 sections to the tree.
 
-.. figure:: _images/section_menu04.png
-   :alt: mdnovel screenshot
-
 - You will be prompted to enter the number of new sections.
 - The number of sections to be added at once is limited to 20.
 - The new sections are placed at the next free position after the selection, if
@@ -55,9 +49,6 @@ With **Section > Set Type**,
 you can set the `type <basic_concepts.html#part-chapter-section-types>`__
 of the selected section to *Normal* or *Unused* .
 
-.. figure:: _images/section_menu02.png
-   :alt: mdnovel screenshot
-
 .. hint::
 
    Type change for multiple sections:
@@ -69,9 +60,6 @@ Set Status
 ----------
 
 **Set the section completion status**
-
-.. figure:: _images/section_menu03.png
-   :alt: mdnovel screenshot
 
 With **Section > Set Status**,
 you can set the `completion status
@@ -86,25 +74,25 @@ or *Done*.
       -  select a parent node (chapter or Book)
 
 
-Export section descriptions for editing
----------------------------------------
+Export section descriptions
+---------------------------
 
-**Export an ODT document that can be imported again after editing**
+**Export a Markdown-formatted document**
 
-With **Section > Export section descriptions for editing**,
+With **Section > Export section descriptions**,
 you can create a text document with a **full synopsis** containing
 part/chapter headings and section descriptions
 that can be edited and reimported.
-File name suffix is ``_sections_tmp``.
+File name suffix is ``_sections``.
 
 
-Section list (export only)
---------------------------
+Section list
+------------
 
-**Export an ODS document**
+**Export a CSV document**
 
-With **Section > Section list (export only)**,
-you can create a spreadsheet with a row per section, containing
+With **Section > Section list**,
+you can create a CSV file with a row per section, containing
 the following data:
 
 - Section ID (hidden)

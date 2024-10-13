@@ -5,9 +5,6 @@ The Plot point properties view opens in the right pane when you
 select a plot point in the tree.
 
 
-.. figure:: _images/point_view01.png
-   :alt: Screenshot
-
 Title and description
 ---------------------
 
@@ -55,9 +52,6 @@ Links
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/world_view02.png
-   :alt: Screenshot
-   
 This is a list for image and research document links.
 
 Although *mdnovel* holds some character/location/item data, it is
@@ -104,7 +98,7 @@ Open Link
       If you want to open certain linked files with another application than the 
       standard application, you can provide a *mdnovel* "launcher" setting. 
       For this, just create a text file named **launchers.ini** in the 
-      ``.novx/config``  directory (where all configuration files are stored).
+      ``.mdnovel/config``  directory (where all configuration files are stored).
       Here you can assign applications to the file extensions.
       
       Zim desktop wiki pages are a special case. 

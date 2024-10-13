@@ -117,7 +117,7 @@ Open Link
       If you want to open certain linked files with another application than the 
       standard application, you can provide a *mdnovel* "launcher" setting. 
       For this, just create a text file named **launchers.ini** in the 
-      ``.novx/config``  directory (where all configuration files are stored).
+      ``.mdnovel/config``  directory (where all configuration files are stored).
       Here you can assign applications to the file extensions.
       
       Zim desktop wiki pages are a special case. 

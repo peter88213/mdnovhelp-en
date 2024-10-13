@@ -3,9 +3,6 @@ Items menu
 
 **Item operation**
 
-.. figure:: _images/items_menu01.png
-   :alt: mdnovel screenshot
-
 Add
 ---
 
@@ -22,48 +19,26 @@ to the tree.
    right pane.
 
 
-Import
-------
+Export item descriptions
+------------------------
 
-**Import items from another project**
+**Export a Markdown-formatted document**
 
-With **Items > Import**,
-you can import a selection of items from another project.
-First you select an XML file containing the item data.
-Then you select the items you want to add to the current project.
-
-.. hint::
-   To create an XML item data file for the current project, 
-   use **Export > Characters/locations/items data files**.
-
-
-Export item descriptions for editing
-------------------------------------
-
-**Export an ODT document that can be imported again after editing**
-
-With **Items > Export item descriptions for editing**,
+With **Items > Export item descriptions**,
 you can create a text document that contains
-item descriptions that can be edited with *Writer* and reimported.
-File name suffix is ``_items_tmp``.
+item descriptions.
+File name suffix is ``_items``.
 
 
-Export item list (spreadsheet)
-------------------------------
+Export item list
+----------------
 
-**Export an ODS document that can be imported again after editing**
+**Export a CSV document**
 
-With **Items > Export item list (spreadsheet)**,
-you can create a spreadsheet that contains
-an item list that can be edited with *Calc* and reimported.
-File name suffix is ``_itemlist_tmp``.
-
-.. note::
-   You can reorder, hide or delete columns and rows 
-   without affecting the reimport. 
-   Only the first column and the first row, which are hidden by default, 
-   must not be changed as they contain the structural information 
-   for the import. 
+With **Items > Export item list**,
+you can create a CSV file that contains
+an item list that can be imported into any spreadsheet application.
+File name suffix is ``_itemlist``.
 
 
 Show list

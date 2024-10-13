@@ -107,7 +107,7 @@ can be placed in the configuration directory of the installation.
 It is applied to any project.
 Its entries override *nv_timeline’s* built-in constants.
 This is the path under Windows:
-``c:\Users\<user name>\.novx\config\nv_timeline.ini``
+``c:\Users\<user name>\.mdnovel\config\nv_timeline.ini``
 
 
 Local project configuration
@@ -127,7 +127,7 @@ You find the a sample configuration file with the
 *nv_timeline* default values in the *mdnovel* installation
 directory under
 
-``c:\Users\<user name>\.novx\nv_timeline_sample\``
+``c:\Users\<user name>\.mdnovel\nv_timeline_sample\``
 
 You best make a copy and edit it.
 
@@ -192,7 +192,7 @@ General
    file, better check if it’s actually the target file.
 
 On the mdnovel side
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 -  Only normal sections are synchronized with *Timeline*, or exported to
    *Timeline*. Unused sections will not show up in the timeline.

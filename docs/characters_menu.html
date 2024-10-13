@@ -51,12 +51,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="command_reference.html">Command reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="file_menu.html">File menu</a></li>
@@ -67,9 +66,8 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Characters menu</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#add">Add</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#set-status">Set Status</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#import">Import</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-character-descriptions-for-editing">Export character descriptions for editing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-character-list-spreadsheet">Export character list (spreadsheet)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-character-descriptions">Export character descriptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-character-list">Export character list</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#show-list">Show list</a></li>
 </ul>
 </li>
@@ -78,7 +76,6 @@
 <li class="toctree-l2"><a class="reference internal" href="plot_menu.html">Plot menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="project_notes_menu.html">Project notes menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="export_menu.html">Export menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import_menu.html">Import menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tools_menu.html">Tools menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help_menu.html">Help menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tree_context_menu.html">Tree view context menu</a></li>
@@ -86,8 +83,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
 </ul>
 
@@ -118,9 +113,6 @@
   <section id="characters-menu">
 <h1>Characters menu<a class="headerlink" href="#characters-menu" title="Link to this heading"></a></h1>
 <p><strong>Character operation</strong></p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/characters_menu01.png" />
-</figure>
 <section id="add">
 <h2>Add<a class="headerlink" href="#add" title="Link to this heading"></a></h2>
 <p><strong>Add a new character</strong></p>
@@ -142,9 +134,6 @@ the right pane.</p></li>
 <p>With <strong>Characters &gt; Set Status</strong>,
 you can make the selected character <em>major</em> or <em>minor</em>.
 Major characters are highlighted in the tree view.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/characters_menu02.png" />
-</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The character status is only for visual distinction. It has no
@@ -152,43 +141,22 @@ influence on the program functions. Nevertheless, you can use it
 to mark viewpoint characters or characters with their own arcs.</p>
 </div>
 </section>
-<section id="import">
-<h2>Import<a class="headerlink" href="#import" title="Link to this heading"></a></h2>
-<p><strong>Import characters from another project</strong></p>
-<p>With <strong>Characters &gt; Import</strong>,
-you can import a selection of characters from another project.
-First you select an XML file containing the character data.
-Then you select the characters you want to add to the current project.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>To create an XML character data file for the current project,
-use <strong>Export &gt; Characters/locations/items data files</strong>.</p>
-</div>
-</section>
-<section id="export-character-descriptions-for-editing">
-<h2>Export character descriptions for editing<a class="headerlink" href="#export-character-descriptions-for-editing" title="Link to this heading"></a></h2>
-<p><strong>Export an ODT document that can be imported again after editing</strong></p>
-<p>With <strong>Characters &gt; Export character descriptions for editing</strong>,
+<section id="export-character-descriptions">
+<h2>Export character descriptions<a class="headerlink" href="#export-character-descriptions" title="Link to this heading"></a></h2>
+<p><strong>Export a Markdown-formatted document</strong></p>
+<p>With <strong>Characters &gt; Export character descriptions</strong>,
 you can create a text document that contains
 character descriptions, bio, goals, and notes that can be edited in
 Office Writer and reimported.
-File name suffix is <code class="docutils literal notranslate"><span class="pre">_characters_tmp</span></code>.</p>
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_characters</span></code>.</p>
 </section>
-<section id="export-character-list-spreadsheet">
-<h2>Export character list (spreadsheet)<a class="headerlink" href="#export-character-list-spreadsheet" title="Link to this heading"></a></h2>
-<p><strong>Export an ODS document that can be imported again after editing</strong></p>
-<p>With <strong>Characters &gt; Export character list (spreadsheet)</strong>,
-you can create a spreadsheet that contains
-a character list that can be edited with <em>Calc</em> and reimported.
-File name suffix is <code class="docutils literal notranslate"><span class="pre">_charlist_tmp</span></code>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can reorder, hide or delete columns and rows
-without affecting the reimport.
-Only the first column and the first row, which are hidden by default,
-must not be changed as they contain the structural information
-for the import.</p>
-</div>
+<section id="export-character-list">
+<h2>Export character list<a class="headerlink" href="#export-character-list" title="Link to this heading"></a></h2>
+<p><strong>Export a CSV document</strong></p>
+<p>With <strong>Characters &gt; Export character list</strong>,
+you can create a CSV file that contains
+a character list that can be imported into any spreadsheet application.
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_charlist</span></code>.</p>
 </section>
 <section id="show-list">
 <h2>Show list<a class="headerlink" href="#show-list" title="Link to this heading"></a></h2>

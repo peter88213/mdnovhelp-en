@@ -3,8 +3,6 @@ View menu
 
 **Control the display**
 
-.. figure:: _images/view_menu01.png
-   :alt: mdnovel screenshot
 
 Chapter level
 -------------

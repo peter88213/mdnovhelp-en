@@ -3,9 +3,6 @@ Part menu
 
 **Part operation**
 
-.. figure:: _images/part_menu01.png
-   :alt: mdnovel screenshot
-
 Add
 ---
 
@@ -22,13 +19,13 @@ you can add a `part <basic_concepts.html#parts>`__ to the tree.
   You can change it in the right pane.
 
 
-Export part descriptions for editing
-------------------------------------
+Export part descriptions
+------------------------
 
-**Export an ODT document that can be imported again after editing**
+**Export a Markdown-formatted document**
 
-With **Part > Export part descriptions for editing**,
+With **Part > Export part descriptions**,
 you can create a text document that contains
 a **very brief synopsis** with part headings and part descriptions.
-File name suffix is ``_parts_tmp``.
+File name suffix is ``_parts``.
 

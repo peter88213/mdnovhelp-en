@@ -4,9 +4,6 @@ Plot line properties
 The Plot line properties view opens in the right pane when you
 select a `plot line <plotting.html#defining-plot-lines>`__ in the tree.
 
-.. figure:: _images/plotline_view01.png
-   :alt: mdnovel screenshot
-
 
 Title and description
 ---------------------
@@ -41,8 +38,7 @@ clicking on the **Clear section assignments** button.
 
 .. hint::
    A convenient way to manage and keep track of section assignments is 
-   offered by the `nv_matrix plugin 
-   <https://github.com/peter88213/nv_matrix/>`__. 
+   offered by the `matrix view <matrix.html>`__. 
 
 
 Links
@@ -50,9 +46,6 @@ Links
 
 Expand or collapse this frame by clicking on the label.
 
-.. figure:: _images/world_view02.png
-   :alt: Screenshot
-   
 This is a list for image and research document links.
 
 Although *mdnovel* holds some character/location/item data, it is
@@ -99,7 +92,7 @@ Open Link
       If you want to open certain linked files with another application than the 
       standard application, you can provide a *mdnovel* "launcher" setting. 
       For this, just create a text file named **launchers.ini** in the 
-      ``.novx/config`` directory (where all configuration files are stored).
+      ``.mdnovel/config`` directory (where all configuration files are stored).
       Here you can assign applications to the file extensions.
       
       Zim desktop wiki pages are a special case. 

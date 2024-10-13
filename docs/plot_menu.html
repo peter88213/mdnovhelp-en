@@ -51,12 +51,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="command_reference.html">Command reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="file_menu.html">File menu</a></li>
@@ -72,16 +71,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#add-plot-point">Add Plot point</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#insert-stage">Insert Stage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#change-level">Change Level</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-plot-grid-for-editing">Export plot grid for editing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-story-structure-description-for-editing">Export story structure description for editing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-plot-line-descriptions-for-editing">Export plot line descriptions for editing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-plot-list-spreadsheet">Export plot list (spreadsheet)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-plot-grid">Export plot grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-story-structure-description">Export story structure description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-plot-line-descriptions">Export plot line descriptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#show-plot-list">Show Plot list</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="project_notes_menu.html">Project notes menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="export_menu.html">Export menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import_menu.html">Import menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tools_menu.html">Tools menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help_menu.html">Help menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tree_context_menu.html">Tree view context menu</a></li>
@@ -89,8 +86,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
 </ul>
 
@@ -121,9 +116,6 @@
   <section id="plot-menu">
 <h1>Plot menu<a class="headerlink" href="#plot-menu" title="Link to this heading"></a></h1>
 <p><strong>Plot elements operation</strong></p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/plot_menu01.png" />
-</figure>
 <section id="add-plot-line">
 <h2>Add Plot line<a class="headerlink" href="#add-plot-line" title="Link to this heading"></a></h2>
 <p><strong>Add a new plot line to the story</strong></p>
@@ -178,11 +170,11 @@ you can change the level of the selected stages.</p>
 influence on the program functions.</p>
 </div>
 </section>
-<section id="export-plot-grid-for-editing">
-<h2>Export plot grid for editing<a class="headerlink" href="#export-plot-grid-for-editing" title="Link to this heading"></a></h2>
-<p><strong>Export an ODS document that can be imported again after editing</strong></p>
-<p>With <strong>Plot &gt; Export plot grid for editing</strong>,
-you can create a spreadsheet as described in the
+<section id="export-plot-grid">
+<h2>Export plot grid<a class="headerlink" href="#export-plot-grid" title="Link to this heading"></a></h2>
+<p><strong>Export a CSV document</strong></p>
+<p>With <strong>Plot &gt; Export plot grid</strong>,
+you can create a CSV file as described in the
 <a class="reference external" href="plotting.html#plot-grid">Plotting with mdnovel</a> chapter,
 with a row per section, containing the following data:</p>
 <ul class="simple">
@@ -202,71 +194,33 @@ manuscript (if any)</p></li>
 <li><p>Outcome/Decision/(custom)</p></li>
 <li><p>Section notes</p></li>
 </ul>
-<p>The plot line titles are linked to the plot line descriptions (see below).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Only “normal” sections appear in the plot grid.
 Sections of the “Unused” type are omitted.</p>
 </div>
-<p>File name suffix is <code class="docutils literal notranslate"><span class="pre">_grid_tmp</span></code>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can reorder, hide or delete columns and rows
-without affecting the reimport.
-Only the first column and the first row, which are hidden by default,
-must not be changed as they contain the structural information
-for the import.</p>
-</div>
+<p>File name suffix is <code class="docutils literal notranslate"><span class="pre">_grid</span></code>.</p>
 </section>
-<section id="export-story-structure-description-for-editing">
-<h2>Export story structure description for editing<a class="headerlink" href="#export-story-structure-description-for-editing" title="Link to this heading"></a></h2>
-<p><strong>Export an ODT document that can be imported again after editing</strong></p>
-<p>With <strong>Plot &gt; Export story structure description for editing</strong>,
+<section id="export-story-structure-description">
+<h2>Export story structure description<a class="headerlink" href="#export-story-structure-description" title="Link to this heading"></a></h2>
+<p><strong>Export a Markdown-formatted document</strong></p>
+<p>With <strong>Plot &gt; Export story structure description</strong>,
 you can create a text document that contains
 all stages, each with description.
-File name suffix is <code class="docutils literal notranslate"><span class="pre">_structure_tmp</span></code>.</p>
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_structure</span></code>.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>This is also a full synopsis, with the emphasis on the dramaturgical structure.</p>
 </div>
 </section>
-<section id="export-plot-line-descriptions-for-editing">
-<h2>Export plot line descriptions for editing<a class="headerlink" href="#export-plot-line-descriptions-for-editing" title="Link to this heading"></a></h2>
-<p><strong>Export an ODT document that can be imported again after editing</strong></p>
-<p>With <strong>Plot &gt; Export plot Export plot line descriptions for editing</strong>,
+<section id="export-plot-line-descriptions">
+<h2>Export plot line descriptions<a class="headerlink" href="#export-plot-line-descriptions" title="Link to this heading"></a></h2>
+<p><strong>Export a Markdown-formatted document</strong></p>
+<p>With <strong>Plot &gt; Export plot Export plot line descriptions</strong>,
 you can create a text document that contains
 stages, plot lines, and plot points, each with description.
 The plot points are linked to the manuscript and to the section descriptions.
-File name suffix is <code class="docutils literal notranslate"><span class="pre">_plotlines_tmp</span></code>.</p>
-</section>
-<section id="export-plot-list-spreadsheet">
-<h2>Export plot list (spreadsheet)<a class="headerlink" href="#export-plot-list-spreadsheet" title="Link to this heading"></a></h2>
-<p><strong>Export an ODS document</strong></p>
-<p>With <strong>Plot &gt; Export plot list (spreadsheet)</strong>,
-you can create a spreadsheet with a row for each section
-and a column for each plot line.
-Associations between plot lines and sections are color-highlighted.
-Plot point titles are displayed.
-File name suffix is <code class="docutils literal notranslate"><span class="pre">_plotlist</span></code>.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>The plot line titles and the section titles are hyperlinked to
-the respective descriptions in other exported documents, if any.</p>
-</div>
-<figure class="align-default" id="id1">
-<img alt="LibreOffice screenshot" src="_images/plot_menu04.png" />
-<figcaption>
-<p><span class="caption-text">LibreOffice screenshot. Note the hyperlink from the plot line title in the
-plot list (left) to the plot line in the plot description (right).</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Hyperlinks in ODS spreadsheets are absolute within the file system,
-so they might not work after moving the location of your project file
-to another folder or computer. In this case, you will have to
-export the spreadsheet anew.</p>
-</div>
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_plotlines</span></code>.</p>
 </section>
 <section id="show-plot-list">
 <h2>Show Plot list<a class="headerlink" href="#show-plot-list" title="Link to this heading"></a></h2>
@@ -276,10 +230,10 @@ You can create a list-formatted HTML file that contains
 a plot list similar to the ODS plot list (see above),
 but without any hyperlinks,
 and launch your system’s web browser for displaying it.</p>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="id1">
 <img alt="Edge browser screenshot" src="_images/plot_menu03.jpg" />
 <figcaption>
-<p><span class="caption-text">Edge browser screenshot</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Edge browser screenshot</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition note">

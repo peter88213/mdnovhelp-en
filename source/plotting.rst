@@ -1,5 +1,5 @@
 Plotting with mdnovel
-=======================
+=====================
 
 
 Applying a story structure model
@@ -15,10 +15,6 @@ phase. This gives you color-coded subheadings in the tree view.
 
    Acts
 
-With the `nv_templates plugin
-<https://github.com/peter88213/nv_templates/>`__ you can
-load pre-made story structure models from Markdown template files, and
-you can save the story structure of your project for reuse.
 
 -----------------
 
@@ -65,10 +61,10 @@ Plot grid
 ---------
 
 The *mdnovel* `plot grid
-<plot_menu.html#export-plot-grid-for-editing>`__ is a spreadsheet with a row for
+<plot_menu.html#export-plot-grid>`__ is a spreadsheet with a row for
 each section, and a set of plot-relevant section metadata in the columns.
 The first visible column contains links to the sections in the
-`manuscript <export_menu.html#manuscript-for-editing>`__.
+`manuscript <export_menu.html#manuscript>`__.
 Each plot line has its own column in the plot grid,
 Where the `plot line notes <section_view.html#plot-lines>`__ are shown.
 The plot grid offers you a convenient way to enter the plot line notes by
@@ -77,10 +73,6 @@ seeing the big pictures of your plot construction.
 .. figure:: _images/plot_grid01.png
    :alt: Example
 
-   Plot grid example
+   Plot grid opened and formatted by a spreadsheet application
 
-
-.. hint::
-   You can assign a section to a plot line by entering text
-   in the corresponding *Plot line notes* cell of the plot grid. 
 

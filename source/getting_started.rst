@@ -4,7 +4,7 @@ Getting started
 Starting from zero
 ------------------
 
-If you start *mdnovel* by dragging a *.novx* file onto the icon,
+If you start *mdnovel* by dragging a *.mdnov* file onto the icon,
 that project will be opened. Otherwise, the project from the last
 session will be automatically reopened, if there is one.
 
@@ -47,45 +47,23 @@ right-click on the chapter, and select **Add section**.
 Starting the manuscript immediately
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As soon as the new section appears in the tree view, we can export a
-manuscript. Just click on the |Export manuscript| toolbar icon.
-
-.. |Export manuscript| image:: _images/manuscript.png
-
-  
-Done! *Writer* should now appear with the manuscript open.
-Just start writing your novel within the text boundary.
+As soon as the new section appears in the tree view, we can open it
+with the `section editor <editor.html>`__.
 
 
-We can now continue working with *Writer* `as described on the next
-page <writing.html>`__, creating new sections and chapters as we write.
-
-.. tip::
-   You can now work on the manuscript document "on the seat of your pants"
-   until it makes sense for  you to transfer the whole thing back to 
-   *mdnovel* in order to create an overview and set up your project 
-   organization there.
-   
-   However, I recommend doing this at least daily at the end of your writing 
-   session and exporting a new manuscript document the next day. 
-   Then you won't get behind with entering the section titles and content 
-   descriptions, and you will get your chapters numbered, if desired. 
-   In addition, *mdnovel* then saves entries in the daily word count log.
-   
-   
 Creating a chapter structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you prefer to make a plan first before you start writing, *mdnovel* is
 the right tool for you.
-Then you don't start *Writer* with an empty manuscript, but first create
-a framework of empty chapters for which you enter content information.
+Then you first create a framework of empty chapters for which you enter content
+information.
 Or you can leave it at one chapter for the time being and create empty sections
 in it, which you can later distribute to chapters.
 The results of this preliminary work can be exported as text documents in the
 form of synopses, e.g on
-`chapter <chapter_menu.html#export-chapter-descriptions-for-editing>`__ or
-`section <section_menu.html#export-section-descriptions-for-editing>`__ level.
+`chapter <chapter_menu.html#export-chapter-descriptions>`__ or
+`section <section_menu.html#export-section-descriptions>`__ level.
 
 
 Creating a dramatic structure
@@ -101,30 +79,6 @@ page.
 There you also can learn how to set up multiple strands or character arcs.
 
 
-Creating a plot grid
-~~~~~~~~~~~~~~~~~~~~
-
-If you want to outline your novel using a `plot grid
-<plotting.html#plot-grid>`__, you can do this with
-*mdnovel*:
-
-1. Create an empty new project as described above.
-2. Add a single chapter.
-3. Select this chapter, then `add multiple sections
-   <section_menu.html#add-multiple-sections>`__.
-4. If you need a number of new sections above the limit,
-   repeat step 3.
-   However, it is recommended to start with a few sections
-   that are easier to distribute to the chapters to be created later.
-   You can extend the plot grid over time.
-5. Create the `plot lines <plot_menu.html#add-plot-line>`__ you need.
-6. `Export a plot grid <plot_menu.html#export-plot-grid-for-editing>`__
-   and fill the table cells.
-7. `Import <import_menu.html>`__ the plot grid.
-8. `Add more chapters <chapter_menu.html#add>`__ and
-   `move the sections <desktop.html#move-tree-elements>`__
-   to them.
-
 -----------------
 
 
@@ -132,7 +86,7 @@ Starting with a Work-in-progress
 --------------------------------
 
 Let's assume that you have already written an extensive novel manuscript with
-*Writer* and now want to continue with *mdnovel*.
+any text editor and now want to continue with *mdnovel*.
 In this case you first make sure to set it up in a way, *mdnovel* can
 recognize its parts, chapters, and sections.
 
@@ -167,7 +121,7 @@ with the *.mdnov* extension.
 Starting with an outline
 ------------------------
 
-Instead of a Work-in-progress, you also can import an outline made with *Writer*
+Instead of a Work-in-progress, you also can import an outline made with any text editor
 into *mdnovel* to get a novel project with empty, but named and described
 chapters and sections.
 At first glance, an outline looks the same as a Work-in-progress, but it has

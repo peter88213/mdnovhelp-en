@@ -51,12 +51,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="writing.html">Writing the manuscript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="command_reference.html">Command reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="file_menu.html">File menu</a></li>
@@ -66,7 +65,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#add">Add</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#set-type">Set Type</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#change-level">Change Level</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-chapter-descriptions-for-editing">Export chapter descriptions for editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-chapter-descriptions">Export chapter descriptions</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="section_menu.html">Section menu</a></li>
@@ -76,7 +75,6 @@
 <li class="toctree-l2"><a class="reference internal" href="plot_menu.html">Plot menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="project_notes_menu.html">Project notes menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="export_menu.html">Export menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="import_menu.html">Import menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tools_menu.html">Tools menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="help_menu.html">Help menu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tree_context_menu.html">Tree view context menu</a></li>
@@ -84,8 +82,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
 </ul>
 
@@ -116,9 +112,6 @@
   <section id="chapter-menu">
 <h1>Chapter menu<a class="headerlink" href="#chapter-menu" title="Link to this heading"></a></h1>
 <p><strong>Chapter operation</strong></p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/chapter_menu01.png" />
-</figure>
 <section id="add">
 <h2>Add<a class="headerlink" href="#add" title="Link to this heading"></a></h2>
 <p><strong>Add a new chapter</strong></p>
@@ -138,9 +131,6 @@ possible.</p></li>
 <p>With <strong>Chapter &gt; Set Type</strong>,
 you can set the <a class="reference external" href="basic_concepts.html#part-chapter-section-types">type</a>
 of the selected chapter to <em>Normal</em> or <em>Unused</em> .</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/chapter_menu02.png" />
-</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Setting the type of a chapter to <em>Unused</em> will also make its sections <em>Unused</em>.</p>
@@ -151,22 +141,18 @@ of the selected chapter to <em>Normal</em> or <em>Unused</em> .</p>
 <p><strong>Change the level of the selected chapters</strong></p>
 <p>With <strong>Chapter &gt; Change Level</strong>,
 you can turn chapters into parts and vice versa.</p>
-<figure class="align-default">
-<img alt="mdnovel screenshot" src="_images/chapter_menu03.png" />
-</figure>
 <ul class="simple">
 <li><p><strong>1st Level</strong> converts the selected chapters into parts.</p></li>
 <li><p><strong>2nd Level</strong> converts the selected parts into chapters.</p></li>
 </ul>
 </section>
-<section id="export-chapter-descriptions-for-editing">
-<h2>Export chapter descriptions for editing<a class="headerlink" href="#export-chapter-descriptions-for-editing" title="Link to this heading"></a></h2>
-<p><strong>Export an ODT document that can be imported again after editing</strong></p>
-<p>With <strong>Chapter &gt; Export chapter descriptions for editing</strong>,
+<section id="export-chapter-descriptions">
+<h2>Export chapter descriptions<a class="headerlink" href="#export-chapter-descriptions" title="Link to this heading"></a></h2>
+<p><strong>Export a Markdown-formatted document</strong></p>
+<p>With <strong>Chapter &gt; Export chapter descriptions</strong>,
 you can create a text document that contains
-a <strong>brief synopsis</strong> with part/chapter headings and chapter descriptions
-that can be edited and reimported.
-File name suffix is <code class="docutils literal notranslate"><span class="pre">_chapters_tmp</span></code>.</p>
+a <strong>brief synopsis</strong> with part/chapter headings and chapter descriptions.
+File name suffix is <code class="docutils literal notranslate"><span class="pre">_chapters</span></code>.</p>
 </section>
 </section>
 

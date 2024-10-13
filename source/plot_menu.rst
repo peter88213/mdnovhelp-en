@@ -3,9 +3,6 @@ Plot menu
 
 **Plot elements operation**
 
-.. figure:: _images/plot_menu01.png
-   :alt: mdnovel screenshot
-
 
 Add Plot line
 -------------
@@ -68,13 +65,13 @@ you can change the level of the selected stages.
    influence on the program functions. 
 
 
-Export plot grid for editing
-----------------------------
+Export plot grid
+----------------
 
-**Export an ODS document that can be imported again after editing**
+**Export a CSV document**
 
-With **Plot > Export plot grid for editing**,
-you can create a spreadsheet as described in the
+With **Plot > Export plot grid**,
+you can create a CSV file as described in the
 `Plotting with mdnovel <plotting.html#plot-grid>`__ chapter,
 with a row per section, containing the following data:
 
@@ -94,75 +91,37 @@ with a row per section, containing the following data:
 - Outcome/Decision/(custom)
 - Section notes
 
-The plot line titles are linked to the plot line descriptions (see below).
-
 .. note::
    Only "normal" sections appear in the plot grid. 
    Sections of the "Unused" type are omitted.
 
-File name suffix is ``_grid_tmp``.
-
-.. note::
-   You can reorder, hide or delete columns and rows 
-   without affecting the reimport. 
-   Only the first column and the first row, which are hidden by default, 
-   must not be changed as they contain the structural information 
-   for the import. 
+File name suffix is ``_grid``.
 
 
-Export story structure description for editing
-----------------------------------------------
+Export story structure description
+----------------------------------
 
-**Export an ODT document that can be imported again after editing**
+**Export a Markdown-formatted document**
 
-With **Plot > Export story structure description for editing**,
+With **Plot > Export story structure description**,
 you can create a text document that contains
 all stages, each with description.
-File name suffix is ``_structure_tmp``.
+File name suffix is ``_structure``.
 
 .. hint::
    This is also a full synopsis, with the emphasis on the dramaturgical structure.
 
 
-Export plot line descriptions for editing
------------------------------------------
+Export plot line descriptions
+-----------------------------
 
-**Export an ODT document that can be imported again after editing**
+**Export a Markdown-formatted document**
 
-With **Plot > Export plot Export plot line descriptions for editing**,
+With **Plot > Export plot Export plot line descriptions**,
 you can create a text document that contains
 stages, plot lines, and plot points, each with description.
 The plot points are linked to the manuscript and to the section descriptions.
-File name suffix is ``_plotlines_tmp``.
-
-
-Export plot list (spreadsheet)
-------------------------------
-
-**Export an ODS document**
-
-With **Plot > Export plot list (spreadsheet)**,
-you can create a spreadsheet with a row for each section
-and a column for each plot line.
-Associations between plot lines and sections are color-highlighted.
-Plot point titles are displayed.
-File name suffix is ``_plotlist``.
-
-.. hint::
-   The plot line titles and the section titles are hyperlinked to 
-   the respective descriptions in other exported documents, if any.
-
-.. figure:: _images/plot_menu04.png
-   :alt: LibreOffice screenshot
-
-   LibreOffice screenshot. Note the hyperlink from the plot line title in the
-   plot list (left) to the plot line in the plot description (right). 
-
-.. important::
-   Hyperlinks in ODS spreadsheets are absolute within the file system, 
-   so they might not work after moving the location of your project file
-   to another folder or computer. In this case, you will have to 
-   export the spreadsheet anew.  
+File name suffix is ``_plotlines``.
 
 
 Show Plot list
