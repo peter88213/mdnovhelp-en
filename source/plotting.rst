@@ -73,6 +73,6 @@ seeing the big pictures of your plot construction.
 .. figure:: _images/plot_grid01.png
    :alt: Example
 
-   Plot grid opened and formatted by a spreadsheet application
+   Plot grid opened and formatted with a spreadsheet application
 
 
