@@ -123,3 +123,14 @@ the following data:
 
 File name suffix is ``_sectionlist``.
 
+-----------------------------------
+
+Edit
+----
+
+**Launch the section editor**
+
+With **Section > Edit**,
+you can open the selected section with the
+`section editor <editor.html>`__.
+
