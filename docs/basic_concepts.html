@@ -64,6 +64,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#section-completion-status">Section completion status</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#characters-and-story-world">Characters and story world</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#formatting-text">Formatting text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#global-find-and-replace">Global find and replace</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
@@ -217,11 +218,25 @@ insert <em>Common mark</em> style markup.</p>
 <p class="admonition-title">Important</p>
 <p>Some character sequences are reserved for the <em>mdnov</em> file format, so they
 must not be used in your text.</p>
-<p>These are:
-- <cite>&#64;&#64;</cite> (element marker)
-- <cite>%%</cite> (property marker)
-- <cite>—</cite> (horizontal ruler of any length used as delimiter for YAML-encoded areas)</p>
+<dl class="simple">
+<dt>Reserved strings:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&#64;&#64;</span></code> (used as element marker)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%%</span></code> (used as property marker)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">---</span></code> (horizontal ruler of any length used as delimiter for YAML-encoded areas)</p></li>
+</ul>
+</dd>
+</dl>
 </div>
+</section>
+<hr class="docutils" />
+<section id="global-find-and-replace">
+<h2>Global find and replace<a class="headerlink" href="#global-find-and-replace" title="Link to this heading"></a></h2>
+<p>Currently, the <a class="reference external" href="editor.html">section editor</a> has no find/replace function.
+However, you can close <em>mdnovel</em> and open the <em>.mdnov</em> project file,
+which is actually nothing more than a Markdown file, with any text editor.
+This allows you to execute global find/replace operations.
+Just be sure not to touch the YAML-encoded areas and the lines containing the reserved strings
+shown in the box above.</p>
 </section>
 </section>
 

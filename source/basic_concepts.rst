@@ -125,6 +125,7 @@ quick reference that might come in handy when writing or editing.
 
 -----------------
 
+
 Formatting text
 ---------------
 
@@ -138,11 +139,25 @@ insert *Common mark* style markup.
    Some character sequences are reserved for the *mdnov* file format, so they
    must not be used in your text. 
    
-   These are: 
-   - `@@` (element marker)
-   - `%%` (property marker) 
-   - `---` (horizontal ruler of any length used as delimiter for YAML-encoded areas) 
+   Reserved strings:
+      - ``@@`` (used as element marker)
+      - ``%%`` (used as property marker) 
+      - ``---`` (horizontal ruler of any length used as delimiter for YAML-encoded areas) 
    
 
+-----------------
 
- 
+
+Global find and replace
+-----------------------
+
+Currently, the `section editor <editor.html>`__ has no find/replace function.
+However, you can close *mdnovel* and open the *.mdnov* project file,
+which is actually nothing more than a Markdown file, with any text editor.
+This allows you to execute global find/replace operations.
+Just be sure not to touch the YAML-encoded areas and the lines containing the reserved strings
+shown in the box above.
+
+
+
+
