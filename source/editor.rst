@@ -68,7 +68,7 @@ you can split the section at the cursor position.
    created section.
 -  The new section is placed after the currently edited section.
 -  The new section is
-   `appended <../section_view.html#append-to-previous-section>`__
+   `appended <section_view.html#append-to-previous-section>`__
    to the currently edited section.
 -  The new section has the same status as the currently edited section.
 -  The new section is of the same type as the currently edited section.
