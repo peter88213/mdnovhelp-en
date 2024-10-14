@@ -10,6 +10,46 @@ is installed, *mdnovel* can
 - open the project timeline with the Timeline application.
 
 
+Command reference
+-----------------
+
+Tools > Timeline > Information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Show information about an existing *Timeline* project, if any. *Timeline*
+   and *mdnovel* file dates are compared.
+
+Tools > Timeline > Create or update the timeline
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If a timeline exists, update it from *mdnovel*, otherwise create a new
+timeline.
+
+Tools > Timeline > Update the project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Update the *mdnovel* project from the timeline, if existing.
+
+.. important::
+   Please make sure to save the timeline before trying to sync with *mdnovel*. 
+   Since *nv_timeline* reads the .timeline file, unsaved changes may not be recognized. 
+   In case of doubt, close *Timeline* before syncing with *mdnovel*.
+
+Tools > Timeline > Open Timeline
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Same as clicking on the |Timeline| button on the toolbar.
+
+Open the project’s timeline, if existing, with the *Timeline* application.
+Depending on the configuration (see below), the project is automatically locked.
+
+File > New > Create from Timeline...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Open a file dialog to select a timeline. If no *mdnovel* project with
+the timeline’s file name exists, create a new one from the timeline.
+
+
 Custom configuration
 --------------------
 

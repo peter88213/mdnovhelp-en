@@ -59,6 +59,14 @@
 <li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix.html">The matrix view</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Synchronization with Timeline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#command-reference">Command reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tools-timeline-information">Tools &gt; Timeline &gt; Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools-timeline-create-or-update-the-timeline">Tools &gt; Timeline &gt; Create or update the timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools-timeline-update-the-project">Tools &gt; Timeline &gt; Update the project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools-timeline-open-timeline">Tools &gt; Timeline &gt; Open Timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-new-create-from-timeline">File &gt; New &gt; Create from Timeline…</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#custom-configuration">Custom configuration</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#global-configuration">Global configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#local-project-configuration">Local project configuration</a></li>
@@ -113,6 +121,42 @@ is installed, <em>mdnovel</em> can</p>
 <li><p>synchronize <em>mdnovel</em> sections with corresponding timeline events in both directions,</p></li>
 <li><p>open the project timeline with the Timeline application.</p></li>
 </ul>
+<section id="command-reference">
+<h2>Command reference<a class="headerlink" href="#command-reference" title="Link to this heading"></a></h2>
+<section id="tools-timeline-information">
+<h3>Tools &gt; Timeline &gt; Information<a class="headerlink" href="#tools-timeline-information" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Show information about an existing <em>Timeline</em> project, if any. <em>Timeline</em>
+and <em>mdnovel</em> file dates are compared.</p></li>
+</ul>
+</section>
+<section id="tools-timeline-create-or-update-the-timeline">
+<h3>Tools &gt; Timeline &gt; Create or update the timeline<a class="headerlink" href="#tools-timeline-create-or-update-the-timeline" title="Link to this heading"></a></h3>
+<p>If a timeline exists, update it from <em>mdnovel</em>, otherwise create a new
+timeline.</p>
+</section>
+<section id="tools-timeline-update-the-project">
+<h3>Tools &gt; Timeline &gt; Update the project<a class="headerlink" href="#tools-timeline-update-the-project" title="Link to this heading"></a></h3>
+<p>Update the <em>mdnovel</em> project from the timeline, if existing.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please make sure to save the timeline before trying to sync with <em>mdnovel</em>.
+Since <em>nv_timeline</em> reads the .timeline file, unsaved changes may not be recognized.
+In case of doubt, close <em>Timeline</em> before syncing with <em>mdnovel</em>.</p>
+</div>
+</section>
+<section id="tools-timeline-open-timeline">
+<h3>Tools &gt; Timeline &gt; Open Timeline<a class="headerlink" href="#tools-timeline-open-timeline" title="Link to this heading"></a></h3>
+<p>Same as clicking on the <a href="#id1"><span class="problematic" id="id2">|Timeline|</span></a> button on the toolbar.</p>
+<p>Open the project’s timeline, if existing, with the <em>Timeline</em> application.
+Depending on the configuration (see below), the project is automatically locked.</p>
+</section>
+<section id="file-new-create-from-timeline">
+<h3>File &gt; New &gt; Create from Timeline…<a class="headerlink" href="#file-new-create-from-timeline" title="Link to this heading"></a></h3>
+<p>Open a file dialog to select a timeline. If no <em>mdnovel</em> project with
+the timeline’s file name exists, create a new one from the timeline.</p>
+</section>
+</section>
 <section id="custom-configuration">
 <h2>Custom configuration<a class="headerlink" href="#custom-configuration" title="Link to this heading"></a></h2>
 <p>You can override the default settings by providing a configuration file.
