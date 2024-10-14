@@ -38,6 +38,17 @@ Create from Markdown...
       containing the chapter and section structure with titles and descriptions.
 
 
+Create from Timeline...
+   -  This will close the current project and open a file dialog asking
+      for a `Timeline <http://thetimelineproj.sourceforge.net/>`__
+      project file to create the new projec from.
+   -  The newly created project is saved automatically in the same
+      directory as the *Timeline* project file, using its file name and the extension
+      *.mdnov*.
+   -  If a project with the same file name as the *Timeline* project file already
+      exists in the directory, no new project will be created.
+
+
 Create from yw7...
    -  This will close the current project and open a file dialog asking
       for a `yWriter <https://spacejock.com/yWriter7.html>`__ project file

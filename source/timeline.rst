@@ -1,95 +1,14 @@
-|external-link| `German <https://peter88213.github.io/mdnovhelp-de/nv_timeline/>`__
+Synchronization with Timeline
+=============================
 
-.. |external-link| image:: ../_images/external-link.png
+If the free `Timeline <http://thetimelineproj.sourceforge.net/>`__ application
+is installed, *mdnovel* can
 
------------------
+- create a timeline from a *mdnovel* project,
+- create a new *mdnovel* project from a timeline,
+- synchronize *mdnovel* sections with corresponding timeline events in both directions,
+- open the project timeline with the Timeline application.
 
-===========
-nv_timeline
-===========
-
-**User guide**
-
-This page refers to the latest `nv_timeline
-<https://github.com/peter88213/nv_timeline/>`__ release.
-You can open it with **Help > Timeline plugin Online help**.
-
-The plugin adds a **Timeline** entry to the *mdnovel* **Tools** menu,
-a **Create from Timeline...** to the **File > New** submenu,
-and a **Timeline plugin Online Help** entry to the **Help** menu.
-The Toolbar gets a |Timeline| button.
-
-.. figure:: _images/screen01.png
-   :alt: mdnovel Screenshot
-
-.. figure:: _images/screen02.png
-   :alt: mdnovel Screenshot
-
-.. |Timeline| image:: _images/tl.png
-
-
-Installing the plugin
----------------------
-
-- Either launch the downloaded **nv_timeline_vx.x.x.pyzw**
-  file by double-clicking (Windows/Linux desktop),
-- or execute ```python nv_timeline_vx.x.x.pyzw``` (Windows),
-  resp. ```python3 nv_timeline_vx.x.x.pyzw``` (Linux)
-  on the command line.
-
-*"x.x.x"* means the version number.
-
-
-.. important::
-   Many web browsers recognize the download as an executable file 
-   and offer to open it immedately. 
-   This starts the installation.
- 
-   However, depending on your security settings, your browser may 
-   initially  refuse  to download the executable file. 
-   In this case, your confirmation or an additional action is required. 
-   If this is not possible, you have the option of downloading 
-   the zip file. 
-
-
-Command reference
------------------
-
-Tools > Timeline > Information
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
--  Show information about an existing *Timeline* project, if any. *Timeline*
-   and *mdnovel* file dates are compared.
-
-Tools > Timeline > Create or update the timeline
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If a timeline exists, update it from *mdnovel*, otherwise create a new
-timeline.
-
-Tools > Timeline > Update the project
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Update the *mdnovel* project from the timeline, if existing.
-
-.. important::
-   Please make sure to save the timeline before trying to sync with *mdnovel*. 
-   Since *nv_timeline* reads the .timeline file, unsaved changes may not be recognized. 
-   In case of doubt, close *Timeline* before syncing with *mdnovel*.
-
-Tools > Timeline > Open Timeline
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Same as clicking on the |Timeline| button on the toolbar.
-
-Open the project’s timeline, if existing, with the *Timeline* application.
-Depending on the configuration (see below), the project is automatically locked.
-
-File > New > Create from Timeline...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Open a file dialog to select a timeline. If no *mdnovel* project with
-the timeline’s file name exists, create a new one from the timeline.
 
 Custom configuration
 --------------------
@@ -156,14 +75,6 @@ This is the configuration file explained:
    new_event_spacing = 1
 
    # Days between events with automatically generated dates.  
-
-
-   [OPTIONS]
-   
-   lock_on_export = No
-   
-   # Yes: Lock the mdnovel project when opening the timeline.
-   # No: Do not lock the mdnovel project when opening the timeline.
 
 
 How to reset the configuration to defaults

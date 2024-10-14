@@ -49,6 +49,10 @@ Same as ``Del``.
 
 -----------------
 
+|Timeline| Open the project’s timeline, if existing, with the `Timeline <http://thetimelineproj.sourceforge.net/>`__ application.
+
+-----------------
+
 |Matrix| Start the `matrix view <matrix.html>`__.
 
 -----------------
@@ -76,3 +80,4 @@ Same as **View > Toggle Properties** or ``Ctrl``-``Alt``-``T``.
 .. |Matrix| image:: _images/matrix.png
 .. |Toggle Text viewer| image:: _images/viewer.png
 .. |Toggle Properties| image:: _images/properties.png
+.. |Timeline| image:: _images/tl.png

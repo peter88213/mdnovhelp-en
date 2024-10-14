@@ -14,6 +14,37 @@ you can launch the file manager with the *mdnovel* installation folder.
 This might come in handy if you wish to edit configuration files,
 or install your own plugins.
 
+-----------------
+
+Timeline
+--------
+
+With **Tools > Timeline** you can open a submenu for interaction with
+the `Timeline <http://thetimelineproj.sourceforge.net/>`__ application.
+For more information , see the
+`Page about the synchronization with Timeline <timeline.html>`__.
+
+Information
+   Show information about an existing *Timeline* project, if any. *Timeline*
+   and *mdnovel* file dates are compared.
+
+Create or update the timeline
+   If a timeline exists, update it from *mdnovel*, otherwise create a new
+   timeline.
+
+Update the project
+   Update the *mdnovel* project from the timeline, if existing.
+
+   .. important::
+      Please make sure to save the timeline before trying to sync with *mdnovel*. 
+      Since *nv_timeline* reads the .timeline file, unsaved changes may not be recognized. 
+      In case of doubt, close *Timeline* before syncing with *mdnovel*.
+
+Open Timeline
+   Open the project’s timeline, if existing, with the *Timeline* application.
+   Same as clicking on the |Timeline| button on the toolbar.
+
+.. |Timeline| image:: _images/tl.png
 
 -----------------
 

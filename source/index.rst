@@ -18,6 +18,8 @@ release. You can open it with **Help > Online help**.
    getting_started
    editor
    plotting
+   matrix
+   timeline
    command_reference
    properties
    about
