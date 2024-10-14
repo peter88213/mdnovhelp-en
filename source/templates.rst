@@ -2,7 +2,7 @@ Story structure templates
 =========================
 
 With *mdnovel*, you can define a narrative structure with stages. See
-`Plotting with mdnovel <../plotting.html>`__.
+`Plotting with mdnovel <plotting.html>`__.
 The template manager faciliates the reuse of narrative structures.
 
 
@@ -26,15 +26,15 @@ template file.
 Tools > Story Templates
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Load
-^^^^
+Load...
+^^^^^^^
 
 This loads the narrative structure from a Markdown template file.
 
 -  A file select dialog asks for the template file to apply.
 
-Save
-^^^^
+Save...
+^^^^^^^
 
 This saves the narrative structure to a Markdown template file.
 
@@ -55,7 +55,7 @@ Markdown file structure
 The *Story Template* Markdown file defines a narrative structure with
 the help of headings and ordinary text.
 
-First level heading for top level stages, e.g. acts
+First level heading for top level stages, e.g. acts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The first level heading begins with ``#``, followed by a space and a

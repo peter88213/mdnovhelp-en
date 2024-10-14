@@ -15,6 +15,10 @@ phase. This gives you color-coded subheadings in the tree view.
 
    Acts
 
+.. hint::
+   With the `template manager <templates.html>`__ you can
+   load pre-made story structure models from Markdown template files, and
+   you can save the story structure of your project for reuse.
 
 -----------------
 

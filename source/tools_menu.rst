@@ -16,12 +16,35 @@ or install your own plugins.
 
 -----------------
 
+Templates
+---------
+
+With **Tools > Story Templates** you can open a submenu with commands
+for story template usage and management.
+For more information, see the
+`Page about the story structure templates <templates.html>`__.
+
+Load...
+   This loads the narrative structure from a Markdown template file.
+
+   -  A file select dialog asks for the template file to apply.
+
+Save...
+   This saves the narrative structure to a Markdown template file.
+
+   -  A file select dialog asks for the new template’s file name.
+
+Open folder
+   This opens the templates folder with the OS file manager, so you can
+   manage and edit the templates.
+
+
 Timeline
 --------
 
 With **Tools > Timeline** you can open a submenu for interaction with
 the `Timeline <http://thetimelineproj.sourceforge.net/>`__ application.
-For more information , see the
+For more information, see the
 `Page about the synchronization with Timeline <timeline.html>`__.
 
 Information
@@ -46,7 +69,6 @@ Open Timeline
 
 .. |Timeline| image:: _images/tl.png
 
------------------
 
 Matrix
 ------
