@@ -58,21 +58,25 @@ Be always aware that faulty entries may cause program errors or
 unreadable *Timeline* projects. If you change a configuration inbetween,
 previously synchronized projects might no longer match.
 
+.. hint::
+   A sample configuration file can be found in the installation directory 
+   in the **sample** subfolder. 
+
 Global configuration
 ~~~~~~~~~~~~~~~~~~~~
 
-An optional global configuration file named ``nv_timeline.ini``
+An optional global configuration file named ``timeline.ini``
 can be placed in the configuration directory of the installation.
 It is applied to any project.
 Its entries override *nv_timeline’s* built-in constants.
 This is the path under Windows:
-``c:\Users\<user name>\.mdnovel\config\nv_timeline.ini``
+``c:\Users\<user name>\.mdnovel\config\timeline.ini``
 
 
 Local project configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-An optional project configuration file named ``nv_timeline.ini``
+An optional project configuration file named ``timeline.ini``
 can be placed in your project directory,
 i.e. the folder containing your *mdnovel* and *Timeline* project files.
 It is only applied to this project.
