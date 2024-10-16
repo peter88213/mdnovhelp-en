@@ -81,8 +81,8 @@ Export section descriptions
 
 With **Section > Export section descriptions**,
 you can create a text document with a **full synopsis** containing
-part/chapter headings and section descriptions
-that can be edited and reimported.
+part/chapter headings and section descriptions,
+that can be opened with any text editor.
 File name suffix is ``_sections``.
 
 
@@ -95,8 +95,8 @@ With **Section > Export section list**,
 you can create a CSV file with a row per section, containing
 the following data:
 
-- Section ID (hidden)
-- Section number (link to manuscript)
+- Section ID
+- Section number
 - Title
 - Description
 - Viewpoint

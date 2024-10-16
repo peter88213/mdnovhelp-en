@@ -25,8 +25,9 @@ Export item descriptions
 **Export a Markdown-formatted document**
 
 With **Items > Export item descriptions**,
-you can create a text document that contains
-item descriptions.
+you can create a text document containing
+item descriptions,
+that can be opened with any text editor.
 File name suffix is ``_items``.
 
 

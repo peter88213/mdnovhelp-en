@@ -41,9 +41,9 @@ Export character descriptions
 **Export a Markdown-formatted document**
 
 With **Characters > Export character descriptions**,
-you can create a text document that contains
-character descriptions, bio, goals, and notes that can be edited in
-Office Writer and reimported.
+you can create a text document containing
+character descriptions, bio, goals, and notes,
+that can be opened with any text editor.
 File name suffix is ``_characters``.
 
 

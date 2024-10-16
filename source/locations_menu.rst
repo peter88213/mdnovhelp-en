@@ -25,8 +25,9 @@ Export location descriptions
 **Export a Markdown-formatted document**
 
 With **Items > Export location descriptions**,
-you can create a text document that contains
-location descriptions.
+you can create a text document containing
+location descriptions,
+that can be opened with any text editor.
 File name suffix is ``_locations``.
 
 
