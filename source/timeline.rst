@@ -40,6 +40,8 @@ Tools > Timeline > Open Timeline
 
 Same as clicking on the |Timeline| button on the toolbar.
 
+.. |Timeline| image:: _images/tl.png
+
 Open the project’s timeline, if existing, with the *Timeline* application.
 Depending on the configuration (see below), the project is automatically locked.
 
