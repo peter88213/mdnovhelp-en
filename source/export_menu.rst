@@ -37,29 +37,6 @@ File name suffix is ``_brf_synopsis``.
 -  Chapter titles appear as second level heading.
 -  Section titles appear as plain paragraphs.
 
------------------
-
-yWriter 7 project
------------------
-
-**Create a new .yw7 project file from the current project**
-
-With **Export >  yWriter 7 project**,
-you can export a project file for the `yWriter <https://spacejock.com/yWriter7.html>`__
-writing program.
-The *.yw7* file is placed in the current project directory.
-
------------------
-
-novelibre project
------------------
-
-**Create a new .novx project file from the current project**
-
-With **Export > novelibre project**,
-you can export a project file for the `novelibre <https://github.com/peter88213/novelibre>`__
-writing program.
-The *.novx* file is placed in the current project directory.
 
 -----------------
 
