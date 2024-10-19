@@ -14,6 +14,20 @@ or by hitting the ``Enter`` key.
    -  If you choose a section already open, the window will be brought to
       the foreground.
 
+Distraction free mode
+---------------------
+
+*mdnovel* provides a "distraction free" editing mode where the active
+editor window covers the whole screen.
+
+- ``F11`` toggles the full screen mode.
+- ``Esc`` finishes the full screen mode.
+
+.. hint::
+   Make sure that the editor area is active when trying to switch on or off
+   the full screen mode. In case of doubt, click into the editor area. 
+
+
 Select text
 -----------
 
