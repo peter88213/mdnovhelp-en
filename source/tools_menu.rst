@@ -87,8 +87,8 @@ Daily progress log
 
 With **Tools > Daily progress log** you can open the progress log viewer
 in a pop-up window.
-If the window is already open, this command will update
-the actual word count.
+While the log viewer window is open, the actual word count is automatically updated.
+
 
 
 
