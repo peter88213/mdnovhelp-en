@@ -5,6 +5,12 @@ With *mdnovel*, you can define a narrative structure with stages. See
 `Plotting with mdnovel <plotting.html>`__.
 The template manager faciliates the reuse of narrative structures.
 
+.. important::
+   The application comes with sample templates which are automatically
+   copied into the *templates* folder of the *mdnovel* installation. 
+   Existing files are overwritten. So if you customize your templates, 
+   better rename them.  
+
 
 Command reference
 -----------------
