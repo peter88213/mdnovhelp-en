@@ -10,7 +10,7 @@ project = 'mdnovel User guide'
 copyright = '2024, Peter Triesberger'
 author = 'Peter Triesberger'
 version = 'Version 1.0+'
-release = '1.0.0'
+release = '1.0.2'
 # The release is related to the mdnovel application's major/minor version numbers.
 
 # -- General configuration ---------------------------------------------------

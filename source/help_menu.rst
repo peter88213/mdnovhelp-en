@@ -13,6 +13,14 @@ Online Help
 With **Help > Online Help**,
 you can launch your system web browser with the *mdnovel* online help URL.
 
+
+About mdnovel
+-------------
+
+With **Help > About mdnovel**
+you can view a legal notice window.
+
+
 mdnovel home page
 -----------------
 
