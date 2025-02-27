@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic concepts &mdash; mdnovel User guide 1.0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="_static/nLogo32.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=68b195bf"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting started" href="getting_started.html" />
+    <link rel="prev" title="Desktop overview" href="desktop.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            mdnovel User guide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-book-hierarchy">The Book hierarchy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#parts">Parts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chapters">Chapters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sections">Sections</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#part-chapter-section-types">Part/chapter/section types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#section-completion-status">Section completion status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#characters-and-story-world">Characters and story world</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formatting-text">Formatting text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#global-find-and-replace">Global find and replace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Story structure templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix.html">The matrix view</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeline.html">Synchronization with Timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command_reference.html">Command reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mdnovel User guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Basic concepts</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="basic-concepts">
+<h1>Basic concepts<a class="headerlink" href="#basic-concepts" title="Link to this heading"></a></h1>
+<section id="the-book-hierarchy">
+<h2>The Book hierarchy<a class="headerlink" href="#the-book-hierarchy" title="Link to this heading"></a></h2>
+<section id="parts">
+<h3>Parts<a class="headerlink" href="#parts" title="Link to this heading"></a></h3>
+<p>A novel is expected to be divided into chapters and sections. Parts
+are optional; technically they are first level chapters.
+However, in the <em>mdnovel</em> project tree they are on the same
+level as the chapters, but they produce a heading one level above.
+Thus, parts are mainly for inserting first level headings between the
+chapters, if needed.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can convert chapters into parts and vice versa by simply
+<a class="reference external" href="tree_context_menu.html#change-level">changing the level</a>.</p>
+</div>
+</section>
+<section id="chapters">
+<h3>Chapters<a class="headerlink" href="#chapters" title="Link to this heading"></a></h3>
+<p>A <em>mdnovel</em> project must at least have one chapter. In the exported
+documents, regular chapters have a second level heading.</p>
+<p>For <em>mdnovel</em>, the chapters only serve as containers for sections
+to which the actual dramaturgical function is assigned.
+This is why there are only a few <a class="reference external" href="chapter_view.html">chapter properties</a>
+to be set.</p>
+</section>
+<section id="sections">
+<h3>Sections<a class="headerlink" href="#sections" title="Link to this heading"></a></h3>
+<p>All body text of a novel in <em>mdnovel</em> belongs to sections.
+Sections can be scenes, pieces of exposition, descriptions, narrative
+summaries—it is entirely up to you how you divide your text into
+sections. There is a variety of <a class="reference external" href="section_view.html">metadata for sections</a> for your free use.</p>
+<p>In the text body of the exported documents, sections are separated by
+section dividers by default, like so:</p>
+<p><code class="docutils literal notranslate"><span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span></code></p>
+<p>However, if you need more fragmented sections when plotting and organizing
+than the reader should see later, you can also <a class="reference external" href="section_view.html#append-to-previous-section">append sections</a> to each
+other as new paragraphs with no section divider inbetween.</p>
+</section>
+</section>
+<section id="part-chapter-section-types">
+<h2>Part/chapter/section types<a class="headerlink" href="#part-chapter-section-types" title="Link to this heading"></a></h2>
+<p>Each part, chapter, and section is of a type that can be changed via
+context menu or Part/Chapter/Section menu. The type can be <em>Normal</em> or
+<em>Unused</em>.</p>
+<dl class="simple">
+<dt>Normal</dt><dd><ul class="simple">
+<li><p>“Normal” type parts, chapters, and sections are counted. The totals
+are displayed in the status bar.</p></li>
+<li><p>“Normal” type sections are exported to the manuscript and included in
+the word count.</p></li>
+<li><p>“Normal” type parts and chapters can have subelements of each type.</p></li>
+<li><p>“Normal” type tree elements are color coded according to the
+<a class="reference external" href="view_menu.html#coloring-mode">coloring mode settings</a>.</p></li>
+</ul>
+</dd>
+<dt>Unused</dt><dd><p>You can mark parts, chapters, and sections as unused to exclude them
+from word count totals and export.</p>
+<ul class="simple">
+<li><p>The subelements of unused parts and chapters are unused as well.</p></li>
+<li><p>If you mark a section “Unused”, its properties are preserved.</p></li>
+<li><p>Unused tree elements are displayed in gray.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="section-completion-status">
+<h2>Section completion status<a class="headerlink" href="#section-completion-status" title="Link to this heading"></a></h2>
+<p>You can assign a status to each “Normal” type section via context menu
+or Section menu.
+You can choose between <em>Outline</em>, <em>Draft</em>, <em>1st Edit</em>, <em>2nd Edit</em>,
+and <em>Done</em>.</p>
+<ul class="simple">
+<li><p>You can choose a <a class="reference external" href="view_menu.html#coloring-mode">coloring mode</a>
+to display sections in different colors depending on their
+completion status.</p></li>
+<li><p>Optionally, you can declare one of the status to be the current
+<a class="reference external" href="book_view.html#writing-progress">work phase</a>,
+and choose a <a class="reference external" href="view_menu.html#coloring-mode">coloring mode</a>
+that highlights sections that are behind schedule.</p></li>
+<li><p>Newly created sections are set to “Outline” by default.</p></li>
+<li><p>Word counts by status appear in the <a class="reference external" href="book_view.html#writing-pogress">Book properties</a>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="characters-and-story-world">
+<h2>Characters and story world<a class="headerlink" href="#characters-and-story-world" title="Link to this heading"></a></h2>
+<p>You can define characters, locations, and items, and you can relate
+them to sections to keep track of their place in the story.
+There is also some metadata stored with <em>mdnovel</em>, mainly as a
+quick reference that might come in handy when writing or editing.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>mdnovel</em> is not meant as a tool for extensive world building.
+For this, there is a plethora of dedicated applications, online
+and offline wikis, and notetaking software. However, <em>mdnovel</em>
+offers the option of linking images and files with the characters,
+locations, and items to facilitate access if your external
+application allows this.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you want to assign <strong>viewpoint characters</strong> to your sections,
+you first have to <a class="reference external" href="characters_menu.html#add">create</a>
+the characters that come into question.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="formatting-text">
+<h2>Formatting text<a class="headerlink" href="#formatting-text" title="Link to this heading"></a></h2>
+<p>Section content is expected to be formatted using Markdown.
+When exporting Markdown documents, <em>mdnovel</em> would not re-format the text,
+so you can write in any Markdown dialect you want.
+The section editor provides some menu entries and keyboard shortcuts that
+insert <em>Common mark</em> style markup.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Some character sequences are reserved for the <em>mdnov</em> file format, so they
+must not be used in your text.</p>
+<dl class="simple">
+<dt>Reserved strings:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&#64;&#64;</span></code> (used as element marker)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%%</span></code> (used as property marker)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">---</span></code> (horizontal ruler of any length used as delimiter for YAML-encoded areas)</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+<hr class="docutils" />
+<section id="global-find-and-replace">
+<h2>Global find and replace<a class="headerlink" href="#global-find-and-replace" title="Link to this heading"></a></h2>
+<p>Currently, the <a class="reference external" href="editor.html">section editor</a> has no find/replace function.
+However, you can close <em>mdnovel</em> and open the <em>.mdnov</em> project file,
+which is actually nothing more than a Markdown file, with any text editor.
+This allows you to execute global find/replace operations.
+Just be sure not to touch the YAML-encoded areas and the lines containing the reserved strings
+shown in the box above.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="desktop.html" class="btn btn-neutral float-left" title="Desktop overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Peter Triesberger.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

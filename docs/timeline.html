@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synchronization with Timeline &mdash; mdnovel User guide 1.0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="_static/nLogo32.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=68b195bf"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Command reference" href="command_reference.html" />
+    <link rel="prev" title="The matrix view" href="matrix.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            mdnovel User guide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Story structure templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix.html">The matrix view</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Synchronization with Timeline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#command-reference">Command reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tools-timeline-information">Tools &gt; Timeline &gt; Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools-timeline-create-or-update-the-timeline">Tools &gt; Timeline &gt; Create or update the timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools-timeline-update-the-project">Tools &gt; Timeline &gt; Update the project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools-timeline-open-timeline">Tools &gt; Timeline &gt; Open Timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-new-create-from-timeline">File &gt; New &gt; Create from Timeline…</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-configuration">Custom configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#global-configuration">Global configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#local-project-configuration">Local project configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-provide-modify-a-configuration-file">How to provide/modify a configuration file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-reset-the-configuration-to-defaults">How to reset the configuration to defaults</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#conventions">Conventions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general">General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#on-the-mdnovel-side">On the mdnovel side</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#on-the-timeline-side">On the Timeline side</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#known-limitations">Known limitations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="command_reference.html">Command reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mdnovel User guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Synchronization with Timeline</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="synchronization-with-timeline">
+<h1>Synchronization with Timeline<a class="headerlink" href="#synchronization-with-timeline" title="Link to this heading"></a></h1>
+<p>If the free <a class="reference external" href="http://thetimelineproj.sourceforge.net/">Timeline</a> application
+is installed, <em>mdnovel</em> can</p>
+<ul class="simple">
+<li><p>create a timeline from a <em>mdnovel</em> project,</p></li>
+<li><p>create a new <em>mdnovel</em> project from a timeline,</p></li>
+<li><p>synchronize <em>mdnovel</em> sections with corresponding timeline events in both directions,</p></li>
+<li><p>open the project timeline with the Timeline application.</p></li>
+</ul>
+<section id="command-reference">
+<h2>Command reference<a class="headerlink" href="#command-reference" title="Link to this heading"></a></h2>
+<section id="tools-timeline-information">
+<h3>Tools &gt; Timeline &gt; Information<a class="headerlink" href="#tools-timeline-information" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Show information about an existing <em>Timeline</em> project, if any. <em>Timeline</em>
+and <em>mdnovel</em> file dates are compared.</p></li>
+</ul>
+</section>
+<section id="tools-timeline-create-or-update-the-timeline">
+<h3>Tools &gt; Timeline &gt; Create or update the timeline<a class="headerlink" href="#tools-timeline-create-or-update-the-timeline" title="Link to this heading"></a></h3>
+<p>If a timeline exists, update it from <em>mdnovel</em>, otherwise create a new
+timeline.</p>
+</section>
+<section id="tools-timeline-update-the-project">
+<h3>Tools &gt; Timeline &gt; Update the project<a class="headerlink" href="#tools-timeline-update-the-project" title="Link to this heading"></a></h3>
+<p>Update the <em>mdnovel</em> project from the timeline, if existing.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please make sure to save the timeline before trying to sync with <em>mdnovel</em>.
+Since <em>nv_timeline</em> reads the .timeline file, unsaved changes may not be recognized.
+In case of doubt, close <em>Timeline</em> before syncing with <em>mdnovel</em>.</p>
+</div>
+</section>
+<section id="tools-timeline-open-timeline">
+<h3>Tools &gt; Timeline &gt; Open Timeline<a class="headerlink" href="#tools-timeline-open-timeline" title="Link to this heading"></a></h3>
+<p>Same as clicking on the <img alt="Timeline" src="_images/tl.png" /> button on the toolbar.</p>
+<p>Open the project’s timeline, if existing, with the <em>Timeline</em> application.
+Depending on the configuration (see below), the project is automatically locked.</p>
+</section>
+<section id="file-new-create-from-timeline">
+<h3>File &gt; New &gt; Create from Timeline…<a class="headerlink" href="#file-new-create-from-timeline" title="Link to this heading"></a></h3>
+<p>Open a file dialog to select a timeline. If no <em>mdnovel</em> project with
+the timeline’s file name exists, create a new one from the timeline.</p>
+</section>
+</section>
+<section id="custom-configuration">
+<h2>Custom configuration<a class="headerlink" href="#custom-configuration" title="Link to this heading"></a></h2>
+<p>You can override the default settings by providing a configuration file.
+Be always aware that faulty entries may cause program errors or
+unreadable <em>Timeline</em> projects. If you change a configuration inbetween,
+previously synchronized projects might no longer match.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>A sample configuration file can be found in the installation directory
+in the <strong>sample</strong> subfolder.</p>
+</div>
+<section id="global-configuration">
+<h3>Global configuration<a class="headerlink" href="#global-configuration" title="Link to this heading"></a></h3>
+<p>An optional global configuration file named <code class="docutils literal notranslate"><span class="pre">timeline.ini</span></code>
+can be placed in the configuration directory of the installation.
+It is applied to any project.
+Its entries override <em>nv_timeline’s</em> built-in constants.
+This is the path under Windows:
+<code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.mdnovel\config\timeline.ini</span></code></p>
+</section>
+<section id="local-project-configuration">
+<h3>Local project configuration<a class="headerlink" href="#local-project-configuration" title="Link to this heading"></a></h3>
+<p>An optional project configuration file named <code class="docutils literal notranslate"><span class="pre">timeline.ini</span></code>
+can be placed in your project directory,
+i.e. the folder containing your <em>mdnovel</em> and <em>Timeline</em> project files.
+It is only applied to this project.
+Its entries override <em>nv_timeline’s</em> built-in constants as
+well as the global configuration, if any.</p>
+</section>
+<section id="how-to-provide-modify-a-configuration-file">
+<h3>How to provide/modify a configuration file<a class="headerlink" href="#how-to-provide-modify-a-configuration-file" title="Link to this heading"></a></h3>
+<p>You find the a sample configuration file with the
+<em>nv_timeline</em> default values in the <em>mdnovel</em> installation
+directory under</p>
+<p><code class="docutils literal notranslate"><span class="pre">c:\Users\&lt;user</span> <span class="pre">name&gt;\.mdnovel\nv_timeline_sample\</span></code></p>
+<p>You best make a copy and edit it.</p>
+<ul class="simple">
+<li><p>The SETTINGS section comprises the program “constants”. If you change
+them, the program might behave differently than described in the
+documentation. So only touch them if you are clear about the
+consequences.</p></li>
+<li><p>Comment lines begin with a <code class="docutils literal notranslate"><span class="pre">#</span></code> number sign. In the example, they
+refer to the code line immediately above.</p></li>
+</ul>
+<p>This is the configuration file explained:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[SETTINGS]</span>
+
+<span class="na">section_label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Section</span>
+
+<span class="c1"># Events with this label become sections in a newly created</span>
+<span class="c1"># mdnovel project.</span>
+
+<span class="na">section_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">170,240,160</span>
+
+<span class="c1"># Color for events imported as sections from mdnovel.</span>
+
+<span class="na">new_event_spacing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+
+<span class="c1"># Days between events with automatically generated dates.</span>
+</pre></div>
+</div>
+</section>
+<section id="how-to-reset-the-configuration-to-defaults">
+<h3>How to reset the configuration to defaults<a class="headerlink" href="#how-to-reset-the-configuration-to-defaults" title="Link to this heading"></a></h3>
+<p>Just delete your global and local configuration files.</p>
+</section>
+</section>
+<section id="conventions">
+<h2>Conventions<a class="headerlink" href="#conventions" title="Link to this heading"></a></h2>
+<section id="general">
+<h3>General<a class="headerlink" href="#general" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The <em>mdnovel</em> project file and the <em>Timeline</em> file are located in the
+same directory.</p></li>
+<li><p>They have the same file name and differ in the file extension.</p></li>
+<li><p>Either a timeline or a <em>mdnovel</em> project is generated from the other
+file for the first time. After that, the two files can be
+synchronized against each other.</p></li>
+</ul>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Synchronizing means overwriting target data
+with source data. Since <em>nv_timeline</em> works in both directions,
+there is always a danger of confusing source and target, thus losing
+changes. So if the program asks you for confirmation to overwrite a
+file, better check if it’s actually the target file.</p>
+</div>
+</section>
+<section id="on-the-mdnovel-side">
+<h3>On the mdnovel side<a class="headerlink" href="#on-the-mdnovel-side" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Only normal sections are synchronized with <em>Timeline</em>, or exported to
+<em>Timeline</em>. Unused sections will not show up in the timeline.</p></li>
+<li><p>Sections with an unspecific time stamp (day, hours, minutes) are
+synchronized with the timeline, if a reference date is set.</p></li>
+<li><p>Changes to the section date/time affect the event start date/time
+during synchronization.</p></li>
+<li><p>Changes to the section duration affect the event end date/time
+during synchronization.</p></li>
+<li><p>Changes to the section title affect the event text during
+synchronization.</p></li>
+<li><p>Changes to the section description affect the event description
+during synchronization.</p></li>
+<li><p>Changes to the section type may add or remove the corresponding event
+during synchronization.</p></li>
+<li><p>Adding or removing sections will add or remove the corresponding
+event during synchronization.</p></li>
+</ul>
+</section>
+<section id="on-the-timeline-side">
+<h3>On the Timeline side<a class="headerlink" href="#on-the-timeline-side" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>A section ID is a string looking like “sc1”. It is auto-generated and
+must not be changed manually.</p></li>
+<li><p>Only events with a label containing the string “Section” (user input)
+or a section ID (auto-generated) are exported as sections to a new
+<em>mdnovel</em> project.</p></li>
+<li><p>When creating a new <em>mdnovel</em> project from a timeline the first time,
+“Section” labels are replaced with section ID labels.</p></li>
+<li><p>If a new <em>mdnovel</em> project is generated again with the same timeline,
+the section ID labels may change.</p></li>
+<li><p>Only events with a label containing a section ID are synchronized
+with an existing <em>mdnovel</em> project.</p></li>
+<li><p>Changes to the event end date/time affect the section duration
+during synchronization.</p></li>
+<li><p>Changes to the event start date/time affect the section date/time
+during synchronization.</p></li>
+<li><p>Changes to the event text affect the section title during
+synchronization.</p></li>
+<li><p>Changes to the event description affect the section description
+during synchronization.</p></li>
+<li><p>The section structure of an existing <em>mdnovel</em> project can not be
+changed in <em>Timeline</em>. Adding/removing events, or adding/removing
+section IDs from event labels will <em>not</em> add or remove the
+corresponding section during synchronization.</p></li>
+<li><p>When creating events from sections without date/time information, the
+dates are automatically generated with a one-day difference, starting
+from the <em>mdnovel</em> project’s reference date.</p></li>
+</ul>
+</section>
+<section id="known-limitations">
+<h3>Known limitations<a class="headerlink" href="#known-limitations" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Section events that begin before 0001-01-01 in the timeline, will not
+be synchronized with <em>mdnovel</em>, because <em>mdnovel</em> can not handle
+these dates.</p></li>
+<li><p>The same applies to the section duration in this case, i.e. the event
+duration in <em>Timeline</em> and the section duration in <em>mdnovel</em> may
+differ.</p></li>
+<li><p>If a section event ends after 9999-12-31 in the timeline, the section
+duration is not synchronized with <em>mdnovel</em>.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="matrix.html" class="btn btn-neutral float-left" title="The matrix view" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="command_reference.html" class="btn btn-neutral float-right" title="Command reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Peter Triesberger.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

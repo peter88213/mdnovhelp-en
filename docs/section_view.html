@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Section properties &mdash; mdnovel User guide 1.0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="_static/nLogo32.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=68b195bf"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Character properties" href="character_view.html" />
+    <link rel="prev" title="Stage properties" href="stage_view.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            mdnovel User guide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preparations.html">Preparations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Story structure templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix.html">The matrix view</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeline.html">Synchronization with Timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command_reference.html">Command reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="properties.html">Properties reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="book_view.html">Book properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter_view.html">Chapter/part properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stage_view.html">Stage properties</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Section properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#title-and-description">Title and description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#viewpoint">Viewpoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unused">Unused</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#append-to-previous-section">Append to previous section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plot">Plot</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#plot-lines">Plot lines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#plot-points">Plot points</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#scene">Scene</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#relationships">Relationships</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#date-time">Date/Time</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#start">Start</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#duration">Duration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#links">Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sticky-note">“Sticky note”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#navigation-buttons">Navigation buttons</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="character_view.html">Character properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="world_view.html">Location/item properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plotline_view.html">Plot line properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="point_view.html">Plot point properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_note_view.html">Project note properties</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mdnovel User guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="properties.html">Properties reference</a></li>
+      <li class="breadcrumb-item active">Section properties</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="section-properties">
+<h1>Section properties<a class="headerlink" href="#section-properties" title="Link to this heading"></a></h1>
+<p>The Section properties view opens in the right pane when you
+select a section in the tree.</p>
+<section id="title-and-description">
+<h2>Title and description<a class="headerlink" href="#title-and-description" title="Link to this heading"></a></h2>
+<p>Title and description are displayed in an editable “index card”.</p>
+<p>The editing of the title can be completed by pressing the <code class="docutils literal notranslate"><span class="pre">Enter</span></code> key.
+Changes to the description are applied when the mouse is clicked
+anywhere outside the text input field.</p>
+</section>
+<section id="tags">
+<h2>Tags<a class="headerlink" href="#tags" title="Link to this heading"></a></h2>
+<p>Tags are a very freely usable tool for labeling sections in the
+tree view. Tags do not have to be defined elsewhere, but simply
+entered in the input field separated by semicolons.
+Editing can be completed by pressing the <code class="docutils literal notranslate"><span class="pre">Enter</span></code> key.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>If you want to use a tag more than once, make sure you use
+the same spelling in the different places.</p>
+</div>
+</section>
+<section id="viewpoint">
+<h2>Viewpoint<a class="headerlink" href="#viewpoint" title="Link to this heading"></a></h2>
+<p>The viewpoint character’s short name is displayed in the tree view.
+You can select it from a drop-down list containing all characters
+in the tree view’s sort order.</p>
+</section>
+<section id="unused">
+<h2>Unused<a class="headerlink" href="#unused" title="Link to this heading"></a></h2>
+<p>With the <strong>Unused</strong> checkbox, you can change the <a class="reference external" href="basic_concepts.html#part-chapter-section-types">section type</a>.</p>
+</section>
+<section id="append-to-previous-section">
+<h2>Append to previous section<a class="headerlink" href="#append-to-previous-section" title="Link to this heading"></a></h2>
+<p>When ticked, there will be no section divider inserted above
+the selected section in exported documents. The section
+just starts a new paragraph.</p>
+</section>
+<section id="plot">
+<h2>Plot<a class="headerlink" href="#plot" title="Link to this heading"></a></h2>
+<p>Expand or collapse this frame by clicking on the label.</p>
+<section id="plot-lines">
+<h3>Plot lines<a class="headerlink" href="#plot-lines" title="Link to this heading"></a></h3>
+<p>Here you can assign the selected section to the plot lines it belongs to.
+The assigned plot lines are displayed in a list in the order they are
+assigned to the section.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A more convenient way to manage and keep track of plot line assignments is
+offered by the <a class="reference external" href="matrix.html">matrix view</a>.</p>
+</div>
+<dl>
+<dt>Add plot line assignment</dt><dd><p>When clicking on <img alt="Add" src="_images/add.png" />, the “Pick mode”
+is activated, and the cursor changes to a “plus” shape. By clicking
+on a plot line, it will be related with the section.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can exit the “Pick mode” without selecting an element by
+clicking on the highlighted status bar, or by pressing the <code class="docutils literal notranslate"><span class="pre">Esc</span></code>
+key.</p>
+</div>
+</dd>
+<dt>Remove plot line assignment</dt><dd><p>When clicking on <img alt="Remove" src="_images/remove.png" /> or pressing the <code class="docutils literal notranslate"><span class="pre">Del</span></code> key,
+the selected plot line is removed from the list.</p>
+</dd>
+<dt>View the related element</dt><dd><p>When double-clicking on a plot line, or clicking on <img alt="Goto" src="_images/goto.png" />,
+the selected plot line is opened and its properties are displayed.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can go back to the initially selected section with <img alt="Go back" src="_images/goBack.png" />.</p>
+</div>
+</dd>
+<dt>Plot line notes</dt><dd><p>You can enter section-related notes for the plot line selected
+in the list of related plot lines. These notes appear in the
+<a class="reference external" href="plotting.html#plot-grid">plot grid</a> where you also can
+edit them.</p>
+</dd>
+</dl>
+</section>
+<section id="plot-points">
+<h3>Plot points<a class="headerlink" href="#plot-points" title="Link to this heading"></a></h3>
+<p>The plot points assigned with the selected section are displayed
+along with their plot lines.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>To change or clear the plot point assignment, go to the
+<a class="reference external" href="point_view.html#assigned-section">plot point’s properties</a>.</p>
+</div>
+</section>
+</section>
+<section id="scene">
+<h2>Scene<a class="headerlink" href="#scene" title="Link to this heading"></a></h2>
+<p>Expand or collapse this frame by clicking on the label.</p>
+<p>There is a popular theory for “selling writers” that suggests novels
+are best divided into scenes, alternating between “action scenes” and
+“reaction scenes”, or “scenes” and “sequels”. If you want to implement
+something like this to ensure suspense, you can do so here.</p>
+<p>If this is not for you, but you would like to use a different method
+to set up a dramaturgical scene micro-structure, you can set the section
+to <strong>Other</strong>, and get three <a class="reference external" href="book_view.html#renamings">freely named</a>
+text fields.</p>
+<p>On the other hand, not every section is a scene to which the categories
+mentioned above apply. Sections can be characterized by mode of discourse
+(e.g. Narration, Dramatic action, Dialogue, Description, Exposition).
+So if a section is not staged, you can set the section to <strong>Not a scene</strong>,
+and get three <a class="reference external" href="book_view.html#renamings">freely named</a>
+text fields.</p>
+</section>
+<section id="relationships">
+<h2>Relationships<a class="headerlink" href="#relationships" title="Link to this heading"></a></h2>
+<p>Expand or collapse this frame by clicking on the label.</p>
+<p>If you want to associate characters, locations, and items with the
+section, you can do it here by adding the element to a list of
+relationships.</p>
+<dl>
+<dt>Show ages</dt><dd><p>If a section is dated, you can call up the ages of the related
+characters who have <a class="reference external" href="character_view.html#bio">birth dates</a>.</p>
+</dd>
+<dt>Add Relationship</dt><dd><p>When clicking on <img alt="Add" src="_images/add.png" />, the “Pick mode”
+is activated, and the cursor changes to a “plus” shape. By clicking
+on a character/location/item, this element will be related with the
+section.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can exit the “Pick mode” without selecting an element by
+clicking on the highlighted status bar, or by pressing the <code class="docutils literal notranslate"><span class="pre">Esc</span></code>
+key.</p>
+</div>
+</dd>
+<dt>Remove Relationship</dt><dd><p>When clicking on <img alt="Remove" src="_images/remove.png" /> or pressing the <code class="docutils literal notranslate"><span class="pre">Del</span></code> key,
+the selected relationship is removed from the list.</p>
+</dd>
+<dt>View the related element</dt><dd><p>When double-clicking on a related element, or clicking on <img alt="Goto" src="_images/goto.png" />,
+the selected element is opened and its properties are displayed.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can go back to the initially selected section with <img alt="Go back" src="_images/goBack.png" />.</p>
+</div>
+</dd>
+</dl>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>A convenient way to manage and keep track of relationships is
+offered by the <a class="reference external" href="matrix.html">matrix view</a>.</p>
+</div>
+</section>
+<section id="date-time">
+<h2>Date/Time<a class="headerlink" href="#date-time" title="Link to this heading"></a></h2>
+<p>Here you can enter information about the selected section’s narrative time.
+Editing can be completed by pressing the <code class="docutils literal notranslate"><span class="pre">Enter</span></code> key.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Dedicated timeline software offers a more convenient way of entering date/time
+and duration information. So if chronology is important to your story, you
+might want to take a look at <a class="reference external" href="http://thetimelineproj.sourceforge.net/">Timeline</a>.</p>
+</div>
+<section id="start">
+<h3>Start<a class="headerlink" href="#start" title="Link to this heading"></a></h3>
+<p>If the selected section is a scene, this is when it starts:</p>
+<dl class="simple">
+<dt>Date</dt><dd><p>Format: <em>YYYY-MM-DD</em>, according to ISO 8601.</p>
+</dd>
+<dt>Time</dt><dd><p>Format: <em>hh:mm</em>, according to ISO 8601.</p>
+</dd>
+<dt>Day</dt><dd><p>Format: Any number. Day “0” is the <a class="reference external" href="book_view.html#narrative-time">reference date</a>, if set.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All entries are optional. You can either enter a date, or a day.</p>
+</div>
+<dl>
+<dt>Moon phase</dt><dd><p>If the required date information is set, you can call up the corresponding moon phase.</p>
+<p>The moon phase information consists of:</p>
+<ul class="simple">
+<li><p>the phase day (0 to 29, where 0=new moon, 15=full etc.),</p></li>
+<li><p>the visible shape,</p></li>
+<li><p>the fraction illuminated.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The moon phase calculation is based on a ‘do it in your head’ algorithm
+by John Conway. In its current form, it’s only valid for the 20th and
+21st centuries.</p>
+</div>
+</dd>
+<dt>Clear date/time</dt><dd><p>This will reset <em>Date</em>, <em>Time</em>, and <em>Day</em> simultaneously.</p>
+</dd>
+<dt>Generate</dt><dd><p>This generates date and time from the date/time/duration data of the
+<a class="reference internal" href="#navigation-buttons">previous section</a>, so the selected section
+follows directly the previous one.</p>
+</dd>
+<dt>Convert date/day</dt><dd><p>If the <a class="reference external" href="book_view.html#narrative-time">reference date</a> is set,
+The unspecific <em>Day</em> can be transformed into a specific <em>Date</em>,
+and vice versa.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If necessary, you can convert all sections at once in the
+<a class="reference external" href="book_view.html#narrative-time">Book properties view</a>.</p>
+</div>
+</dd>
+</dl>
+</section>
+<section id="duration">
+<h3>Duration<a class="headerlink" href="#duration" title="Link to this heading"></a></h3>
+<dl class="simple">
+<dt>Days</dt><dd><p>Any number should be accepted.</p>
+</dd>
+<dt>Hours</dt><dd><p>If a number greater than 24 is entered, the number of days
+will be automatically increased.</p>
+</dd>
+<dt>Minutes</dt><dd><p>If a number greater than 60 is entered, the number of hours
+will be automatically increased.</p>
+</dd>
+<dt>Clear duration</dt><dd><p>This will reset <em>Days</em>, <em>Hours</em>, and <em>Minutes</em> simultaneously.</p>
+</dd>
+<dt>Generate</dt><dd><p>This generates the duration from the date/time data of the
+<a class="reference internal" href="#navigation-buttons">next section</a>, so the next section
+follows directly the current one.</p>
+</dd>
+</dl>
+</section>
+</section>
+<section id="links">
+<h2>Links<a class="headerlink" href="#links" title="Link to this heading"></a></h2>
+<p>Expand or collapse this frame by clicking on the label.</p>
+<p>This is a list for image and research document links.</p>
+<p>Although <em>mdnovel</em> holds some character/location/item data, it is
+not the right application for extensive world building. For this,
+you may want to use more powerful software, like <a class="reference external" href="https://zim-wiki.org/">Zim Desktop Wiki</a>. In this case, <em>mdnovel</em> allows you to
+create links to the text files that will take you quickly to the right
+places in the wiki.</p>
+<p>Or you have collected some images that could inspire you when writing.
+Then simply create links to these images to open them with your
+system’s standard image viewer.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you have collected several images for a character in a folder
+that your standard image viewer can browse through, a single link
+to any image file is sufficient.</p>
+</div>
+<p>The links are displayed in a list in the order they are entered.</p>
+<dl>
+<dt>Add Link</dt><dd><p>When clicking on <img alt="Add" src="_images/add.png" />, a file selection dialog opens. The selected
+file will be added to the link list.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>By default, the dialog shows image files. For other file types,
+change the selector in the lower right corner.</p>
+<figure class="align-default" id="id2">
+<img alt="Screenshot" src="_images/filePicker01.png" />
+<figcaption>
+<p><span class="caption-text">Windows Explorer Screenshot</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div>
+</dd>
+<dt>Remove Link</dt><dd><p>When clicking on <img alt="Remove" src="_images/remove.png" /> or pressing the <code class="docutils literal notranslate"><span class="pre">Del</span></code> key,
+the selected link is removed from the list.</p>
+</dd>
+<dt>Open Link</dt><dd><p>When double-clicking on a link, or clicking on <img alt="Goto" src="_images/goto.png" />,
+the link is opened with the standard application for the link’s file type.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you want to open certain linked files with another application than the
+standard application, you can provide a <em>mdnovel</em> “launcher” setting.
+For this, just create a text file named <strong>launchers.ini</strong> in the
+<code class="docutils literal notranslate"><span class="pre">.mdnovel/config</span></code>  directory (where all configuration files are stored).
+Here you can assign applications to the file extensions.</p>
+<p>Zim desktop wiki pages are a special case.
+For this, the Zim program is assigned to the <cite>.zim</cite> extension.</p>
+<p>This example shows a setting that makes <em>mdnovel</em> open text files
+with the <em>Zim Desktop Wiki</em> application instead of the standard text
+editor:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[SETTINGS]</span>
+<span class="na">.zim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">C:/Program Files (x86)/Zim Desktop Wiki/zim.exe</span>
+</pre></div>
+</div>
+<figure class="align-default" id="id3">
+<img alt="Screenshot" src="_images/launchers.png" />
+<figcaption>
+<p><span class="caption-text">Windows Explorer Screenshot</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div>
+</dd>
+</dl>
+</section>
+<section id="sticky-note">
+<h2>“Sticky note”<a class="headerlink" href="#sticky-note" title="Link to this heading"></a></h2>
+<p>The yellow text area is for notes. Changes are applied
+when the mouse is clicked anywhere outside the text input field.</p>
+<p>When the “sticky note” of a section contains text, “N” is
+displayed in the tree view as a reminder. If the branch of a chapter
+with sections containing notes is collapsed, the “N” is displayed
+in the chapter row.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The “sticky notes” are only for working with <em>mdnovel</em>.
+They are not meant to be exported into a document.
+However, they appear in the <a class="reference external" href="section_menu.html#export-section-list-spreadsheet">section list</a>.</p>
+</div>
+</section>
+<section id="navigation-buttons">
+<h2>Navigation buttons<a class="headerlink" href="#navigation-buttons" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Previous</strong> moves the selection to the previous section in the tree.</p></li>
+<li><p><strong>Next</strong> moves the selection to the next section in the tree.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="stage_view.html" class="btn btn-neutral float-left" title="Stage properties" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="character_view.html" class="btn btn-neutral float-right" title="Character properties" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Peter Triesberger.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

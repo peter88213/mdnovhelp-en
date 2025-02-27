@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preparations &mdash; mdnovel User guide 1.0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="_static/nLogo32.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=68b195bf"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Desktop overview" href="desktop.html" />
+    <link rel="prev" title="mdnovel User guide" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            mdnovel User guide
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Preparations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-mdnovel">Setting up mdnovel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installing-the-application">Installing the application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#making-mdnovel-accessible-on-the-desktop">Making mdnovel accessible on the Desktop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updating-the-application">Updating the application</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="desktop.html">Desktop overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic_concepts.html">Basic concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor.html">The section editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plotting.html">Plotting with mdnovel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Story structure templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix.html">The matrix view</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeline.html">Synchronization with Timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="command_reference.html">Command reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="properties.html">Properties reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About this user guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mdnovel User guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Preparations</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="preparations">
+<h1>Preparations<a class="headerlink" href="#preparations" title="Link to this heading"></a></h1>
+<section id="setting-up-mdnovel">
+<h2>Setting up mdnovel<a class="headerlink" href="#setting-up-mdnovel" title="Link to this heading"></a></h2>
+<p>If <em>mdnovel</em> were a commercial application, all the
+steps described below would be performed automatically
+by the setup program. On Windows, for instance, this would
+then be an <em>.exe</em> or <em>.msi</em> file that must be executed
+with special authorizations and may even require a costly
+certificate in order to be approved for download and
+installation.</p>
+<p>There is also the problem that a separate setup program would
+have to be created and maintained for each operating system.
+For Linux, it would be necessary to provide installation
+packages or images, whereby there are a multitude of different
+standards.</p>
+<p>Because I don’t run a software business, but am just a
+hobbyist and rather want to write novels, I’ve decided to
+go a different route: I provide an executable Python zip archive
+that works the same way on all operating systems
+if Python is installed correctly.
+No Internet connection is required to install and operate <em>mdnovel</em>.</p>
+<p>The very last setup steps, which vary depending
+on the operating system and may also require special authorizations,
+must be carried out by the intrepid users themselves.
+I do what I can to make these steps easier, and provide
+detailed instructions for Windows below.
+Enjoy!</p>
+<section id="installing-the-application">
+<h3>Installing the application<a class="headerlink" href="#installing-the-application" title="Link to this heading"></a></h3>
+<dl>
+<dt>Step 1</dt><dd><ul>
+<li><p>Either launch the downloaded <strong>mdnovel_vx.x.x.pyzw</strong>
+file by double-clicking (Windows/Linux desktop),</p></li>
+<li><p>or execute</p>
+<p><code class="docutils literal notranslate"><span class="pre">`python</span> <span class="pre">mdnovel_vx.x.x.pyzw`</span></code> (Windows), resp.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`python3</span> <span class="pre">mdnovel_vx.x.x.pyzw`</span></code> (Linux) on the command line.</p>
+</li>
+</ul>
+<p><em>“x.x.x”</em> means the version number.</p>
+<p>In both cases, a pop-up window should appear indicating
+that the installation was successful.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Many web browsers recognize the download as an executable file
+and offer to open it immedately.
+This starts the installation.</p>
+<p>However, depending on your security settings, your browser may
+initially  refuse  to download the executable file.
+In this case, your confirmation or an additional action is required.
+If this is not possible, you have the option of downloading
+the zip file.</p>
+</div>
+</dd>
+</dl>
+</section>
+<section id="making-mdnovel-accessible-on-the-desktop">
+<h3>Making mdnovel accessible on the Desktop<a class="headerlink" href="#making-mdnovel-accessible-on-the-desktop" title="Link to this heading"></a></h3>
+<div class="admonition-note-for-linux-users admonition">
+<p class="admonition-title">Note for Linux users</p>
+<p>In the following chapters, the Windows procedure is described.</p>
+<p>As a Linux user, you are expected to know how to set up
+a program launcher on your specific desktop.
+Roughly speaking, it is a matter of calling <strong>python3</strong>
+with <strong>~/.mdnov/run.pyw</strong> and an optionally specified
+file as parameters.</p>
+<p>With the XFCE desktop, for example, my launcher command is:</p>
+<p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">/home/peter/.mdnov/run.pyw</span> <span class="pre">%F</span></code></p>
+<p>You might have to copy the <em>mdnovel</em> icons to a dedicated image
+directory where your program launcher gets the icons from.
+You also may want to set <em>mdnovel</em> as standard application for
+files with the <em>.mdnov</em> extension, and assign them the <em>mdnovel</em>
+logo as file icon.
+With the XFCE desktop, none of this was too difficult for me.
+In doubt, refer to your desktop documentation.</p>
+</div>
+<dl>
+<dt>Step 2</dt><dd><p>Open the installation folder.</p>
+</dd>
+<dt>Step 3</dt><dd><p>Drag and drop <strong>run.pyw</strong> to the desktop while holding
+down the <code class="docutils literal notranslate"><span class="pre">Alt</span></code> key. This creates a shortcut to launch
+<em>mdnovel</em> from the Windows desktop. Now you can also
+drag and drop <em>.mdnov</em> project files to this shortcut.</p>
+</dd>
+<dt>Step 4</dt><dd><p>Optionally, you can replace the “Python” icon with the
+<em>mdnovel</em> logo you may find in the installation’s
+<em>icons</em> subdirectory.</p>
+<p>To do this, right-click on the desktop shortcut and
+open the <strong>Properties</strong> dialog. Select the <strong>Shortcut</strong>
+Tab and click on the <strong>Change icon</strong> button (1). In the
+icon selection dialog, click on the <strong>Browse…</strong> button
+(2). This opens a file selection dialog. Move to
+<code class="docutils literal notranslate"><span class="pre">&lt;home&gt;\.mdnov\icons</span></code> and double-click on the “N” logo
+(3).</p>
+</dd>
+<dt>Step 5</dt><dd><p>To rename the shortcut to <em>mdnovel</em>, right-click on
+the desktop shortcut and open the <strong>Properties</strong>
+dialog. In the first tab, replace “Shortcut to run.pyw”
+with “mdnovel”.</p>
+</dd>
+</dl>
+</section>
+<section id="updating-the-application">
+<h3>Updating the application<a class="headerlink" href="#updating-the-application" title="Link to this heading"></a></h3>
+<p>Just execute the first step as described above.
+If there is any further action required, the setup script will
+give you a message.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="mdnovel User guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="desktop.html" class="btn btn-neutral float-right" title="Desktop overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Peter Triesberger.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
